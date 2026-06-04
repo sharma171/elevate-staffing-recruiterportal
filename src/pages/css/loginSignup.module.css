@@ -1,0 +1,92 @@
+.ordiv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ordiv::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e4e6ec;
+}
+
+.ordiv span {
+  background: #f4f7fc;
+  padding: 4px 10px;
+  color: #969ab8;
+  z-index: 9;
+}
+
+.brandImage {
+  position: relative;
+  background: url("../../assets/images/brandBackground.png") center/cover no-repeat;
+}
+
+.brandImageEmp {
+  position: relative;
+  background: url("../../assets/images/employeeLoginBG.svg") center/cover no-repeat;
+}
+
+.quoteIcon {
+  position: absolute;
+  top: 6%;
+  left: 11%;
+}
+
+.icon {
+  display: block;
+  width: 118px;
+}
+
+.brandText {
+  position: absolute;
+  top: 13%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+  width: 72%;
+}
+
+.headings {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32.7407px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.headings span {
+  font-weight: 400;
+  color: #ffffffb6;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 23.1111px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  color: #f4f4f4;
+}
+
+.leftScroller {
+  max-height: 100dvh;
+  min-height: 95dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.leftScroller::-webkit-scrollbar {
+  display: none;
+}

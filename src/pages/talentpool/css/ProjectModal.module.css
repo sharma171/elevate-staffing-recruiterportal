@@ -1,0 +1,95 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+}
+
+.modal {
+  width: 420px;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.field {
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.secondary {
+  background: #ddd;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.primary {
+  background: #0ea5a4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hoverInput {
+  border-width: 2px !important;
+  border-radius: 12px !important;
+}
+
+.hoverInput:focus {
+  border: 2px solid #5e3eee;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+.clientLocationBox {
+  background-color: #f9f9f9;
+}

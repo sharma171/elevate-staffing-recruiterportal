@@ -1,0 +1,60 @@
+.backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.modal {
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.alert {
+  transition: background-color 0.2s ease;
+}
+
+.alert:hover {
+  background-color: #fff3cd;
+}
+
+.primaryBtn {
+  transition: all 0.2s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-1px);
+  background-color: #000;
+}
+
+.secondaryBtn {
+  transition: background-color 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: #f1f3f5;
+}
+
+.closeBtn {
+  transition: transform 0.2s ease;
+}
+
+.closeBtn:hover {
+  transform: rotate(90deg);
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

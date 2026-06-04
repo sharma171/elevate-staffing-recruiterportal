@@ -1,0 +1,676 @@
+.sheetHeader {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.sheetTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sheetDescription {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.badgeContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.highPriority {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.mediumPriority {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.lowPriority {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.open {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.resolved {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.closed {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detailLabel {
+  color: #6b7280;
+}
+
+.descriptionSection {
+  margin-top: 1rem;
+}
+
+.descriptionSection h4 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.descriptionSection p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  white-space: pre-wrap;
+}
+
+.attachmentsSection {
+  margin-top: 1rem;
+}
+
+.attachmentsSection h4 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.attachmentList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.attachmentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #1f2937;
+  transition: background-color 0.2s;
+}
+
+.attachmentItem:hover {
+  background-color: #f3f4f6;
+}
+
+.attachmentInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.attachmentName {
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachmentSize {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.communicationContainer {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.communicationContent {
+  position: relative;
+  overflow: hidden;
+  max-height: 300px;
+  padding-right: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #668ec3 transparent;
+}
+
+.communicationContent::-webkit-scrollbar-thumb {
+  background-color: #668ec3;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.communicationContent::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.message {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.messageContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.sender {
+  font-weight: 500;
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+}
+
+.badgeEmployee,
+.badgeHr {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeEmployee {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgeHr {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.messageText {
+  background-color: #f3f4f6;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+}
+
+.replyContainer {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textarea {
+  display: flex;
+  min-height: 80px;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.fileUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.buttonOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonOutline:hover {
+  background-color: #f9fafb;
+}
+
+.buttonOutline:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fileInfo {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.fileInput {
+  display: none;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button,
+.buttonPrimary,
+.buttonSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.button {
+  background-color: #fff;
+  border-color: #d1d5db;
+  color: #1f2937;
+}
+
+.button:hover {
+  background-color: #f9fafb;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttonPrimary {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.buttonPrimary:hover {
+  background-color: #2563eb;
+}
+
+.buttonPrimary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttonSecondary {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.buttonSecondary:hover {
+  background-color: #d1d5db;
+}
+
+.buttonSecondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.actionsContainer {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.actionRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actionRow label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+}
+
+.selectContainer {
+  position: relative;
+}
+
+.select {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  appearance: none;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #9ca3af;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.iconSm {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.iconXs {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex-shrink: 0;
+}
+/* Add these to your existing CSS module */
+
+.errorText {
+  color: #e53e3e;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.attachedFiles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.attachedFileItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.fileName {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileSize {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.removeFileButton {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.removeFileButton:hover {
+  background-color: #fee2e2;
+}
+
+.removeFileButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .sheetHeader,
+  .contentContainer,
+  .cardHeader,
+  .cardContent,
+  .communicationContainer,
+  .replyContainer,
+  .actionsContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 10px;
+  }
+
+  .sheetTitle {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .badgeContainer {
+    flex-wrap: wrap;
+  }
+
+  .attachmentItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .attachmentName {
+    max-width: 100%;
+  }
+
+  .message {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .messageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .fileUpload {
+    align-items: flex-start;
+  }
+
+  .attachedFileItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .select {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sheetHeader,
+  .contentContainer,
+  .cardHeader,
+  .cardContent,
+  .communicationContainer,
+  .replyContainer,
+  .actionsContainer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .card {
+    border: unset;
+  }
+
+  .sheetTitle {
+    font-size: 0.95rem;
+  }
+
+  .cardTitle {
+    font-size: 1.125rem;
+  }
+
+  .sender {
+    max-width: 100%;
+  }
+
+  .communicationContent {
+    height: 250px;
+  }
+
+  .button,
+  .buttonPrimary,
+  .buttonSecondary,
+  .buttonOutline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .textarea {
+    font-size: 0.8125rem;
+  }
+
+  .attachmentList {
+    gap: 0.25rem;
+  }
+
+  .fileInfo {
+    font-size: 0.6875rem;
+  }
+
+  .icon,
+  .iconSm,
+  .iconXs {
+    width: 1rem;
+    height: 1rem;
+  }
+}

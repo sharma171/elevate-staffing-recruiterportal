@@ -1,0 +1,56 @@
+.icon {
+  left: 10px;
+  position: absolute;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.rowHover:hover {
+  background: rgba(108, 117, 125, 0.08); /* bs secondary with opacity */
+}
+
+.responsiveTable thead th {
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .responsiveTable thead {
+    display: none;
+  }
+  .responsiveTable,
+  .responsiveTable tbody,
+  .responsiveTable tr,
+  .responsiveTable td {
+    display: block;
+    width: 100%;
+  }
+  .responsiveTable tr {
+    margin-bottom: 12px;
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .responsiveTable td {
+    border: none !important;
+    border-bottom: 1px solid var(--bs-border-color, #dee2e6) !important;
+    position: relative;
+    padding-left: 50%;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .responsiveTable td:last-child {
+    border-bottom: none !important;
+  }
+  .responsiveTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: #6c757d; /* muted */
+    width: calc(50% - 24px);
+    white-space: nowrap;
+  }
+}

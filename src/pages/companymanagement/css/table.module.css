@@ -1,0 +1,147 @@
+.table {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px 0 0 0;
+  min-height: 250px;
+}
+
+.tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Light gray for odd rows */
+}
+
+.tbody td {
+  width: 21%;
+  padding: 10px 20px 10px 22px;
+}
+.tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.thead th {
+  color: var(--gray_description);
+  padding: 2px 20px 15px 22px;
+}
+
+.thead th img {
+  height: 16px;
+}
+
+.themeColor {
+  color: #083a83;
+}
+
+.activebadge .dot,
+.inactivebadge .dot {
+  height: 13px;
+  width: 13px;
+  background-color: red;
+  border-radius: 1000px;
+  display: block;
+}
+
+.activebadge .dot {
+  background-color: #007c0f;
+}
+
+.inactivebadge .dot {
+  background-color: #a61010;
+}
+
+.activebadge {
+  border-radius: 1000px;
+  background-color: #f0feed;
+  color: #007c0f;
+  padding: 4px 12px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.descriptionData {
+  width: 30%;
+}
+.tableIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+.teamData span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0b4da1;
+}
+
+.tbody .adminRole {
+  padding: 8px 25px;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: linear-gradient(112.83deg, #ffb62c 0%, #f5815a 110.84%);
+  border-radius: 10px;
+}
+
+.tbody .pendingRole {
+  padding: 8px 25px;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: linear-gradient(112.83deg, #0a8a61 0%, #1bbe8a 110.84%);
+  border-radius: 10px;
+}
+
+.tbody .superAdminRole {
+  padding: 8px 25px;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: linear-gradient(112.83deg, #eb4887 0%, #af619a 110.84%);
+  border-radius: 10px;
+}
+.tbody .recruiterRole {
+  padding: 8px 25px;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: linear-gradient(112.83deg, rgba(28, 80, 132, 0.870588) 0%, #7b68ee 110.84%);
+  border-radius: 10px;
+}
+
+.inactivebadge {
+  border-radius: 1000px;
+  background-color: #feeded;
+  color: #a61010;
+  padding: 6px 13px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.list_active,
+.hoverlist:hover,
+.dropdown_item:hover,
+.dropdown_item:active,
+.dropdownlist:hover,
+.dropdownlist:active,
+.dropdownlist:focus {
+  background-color: var(--themeBTNBGDARK) !important;
+  color: var(--white) !important;
+}
+
+@media (max-width: 600px) {
+  .thead th img {
+    height: 14px !important;
+  }
+  .thead th img + span {
+    font-size: 14px;
+  }
+}

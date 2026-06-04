@@ -1,0 +1,74 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 9998;
+}
+.dialog {
+  background: #fff;
+  width: min(800px, 95%);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 60vh;
+  max-height: 75vh;
+}
+.title {
+  margin: 0;
+}
+.select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e6e7eb;
+  width: 100%;
+}
+.list {
+  overflow: auto;
+  max-height: 70vh;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.date {
+  color: #6b7280;
+  min-width: 90px;
+  max-width: 120px;
+}
+.desc {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.amount {
+  font-weight: 600;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 15px;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e6e7eb;
+  background: transparent;
+  cursor: pointer;
+}
+.primary {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

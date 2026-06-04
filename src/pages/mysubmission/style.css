@@ -1,0 +1,55 @@
+.candidates-table.submission .ov
+.table-head
+.top-head:nth-child(1) {
+    width: 20%;
+}
+.candidates-table.submission .ov
+.table-head
+.top-head:nth-child(2) {
+    width: 20%;
+}
+.candidates-table.submission .ov
+.table-head
+.top-head:nth-child(3) {
+    min-width: 100px;
+    width: 20%;
+    max-width: 100px;
+}
+.candidates-table.submission .ov
+.table-head
+.top-head:nth-child(4) {
+    width: 20%;
+}
+.candidates-table.submission .ov
+.table-head
+.top-head:nth-child(5) {
+    min-width: 300px;
+    width: 20%;
+    max-width: 300px;
+}
+
+.candidates-table.submission .ov
+.table-data
+.items{
+    &:nth-child(1) {
+        min-width: 250px;
+        width: 20%;
+        max-width: 250px;
+    }
+    &:nth-child(2) {
+        min-width: 190px;
+        max-width: 190px;
+    }
+    &:nth-child(3) {
+        min-width: 100px;
+        max-width: 100px;
+    }
+    &:nth-child(4) {
+        min-width: 350px;
+        max-width: 350px;
+    }
+    &:nth-child(2) {
+        min-width: 300px;
+        max-width: 300px;
+    }
+}

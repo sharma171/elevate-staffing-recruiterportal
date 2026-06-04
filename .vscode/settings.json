@@ -1,0 +1,98 @@
+{
+  "prettier.printWidth": 120,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.exclude": {
+    "**/node_modules": false
+  },
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.useParentIgnoreFiles": true,
+  "editor.mouseWheelZoom": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "[css]": {
+    "files.insertFinalNewline": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreRebaseWarning": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "workbench.startupEditor": "none",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "editor.wordWrap": "on",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "editor.stickyScroll.enabled": true,
+  "terminal.integrated.env.osx": {},
+
+  "tabnine.experimentalAutoImports": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.env.windows": {},
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.largeFileOptimizations": false,
+  "workbench.editorAssociations": {
+    "*.git": "default"
+  },
+  "terminal.integrated.env.linux": {},
+  "git.confirmSync": false,
+  "files.autoSave": "onFocusChange",
+  "remote.SSH.remotePlatform": {
+    "sandbox.7d6lzp.csb": "linux"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascriptreact": false
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "editor.fontSize": 20
+}

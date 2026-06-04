@@ -1,0 +1,195 @@
+.ciInfo {
+  background: #f0fdf4;
+  padding: 20px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbf7d0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ciRow {
+  /* display: flex;
+  justify-content: space-between; */
+  font-size: 14px;
+  color: #374151;
+}
+
+.ciLabel {
+  color: #065f46;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ciValue {
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.ciFieldLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.ciInputRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ciInput {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.ciInput:hover {
+  border-color: #cbd5e1;
+}
+
+.ciInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.ciTextarea {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 80px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.ciTextarea:hover,
+.ciTextarea:focus {
+  border: 1px solid #2563eb;
+}
+
+.ciHint {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ciBtnPrimary {
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.ciBtnPrimary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.ciBtnOutline {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.ciBtnOutline:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.ciBtnBlock {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.ciBtnBlock:hover {
+  background: #f9fafb;
+  border-color: #cbd5e1;
+}
+
+.ciBtnGhost {
+  border: 1px solid #e5e7eb;
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.ciBtnGhost:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.ciActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ciActionsRight {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .ciActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ciActionsRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.attachmentssection {
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+
+.attachmentsBox {
+  max-width: 250px;
+  height: unset;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.attachmentsBox:hover {
+  background-color: #f9fafb;
+}

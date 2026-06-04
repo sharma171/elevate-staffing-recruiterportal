@@ -1,0 +1,58 @@
+.formlabel {
+  color: var(--darkGray);
+}
+
+.formContainer {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px 0px #00000015;
+  width: 100%;
+}
+
+.themeColor {
+  color: var(--themeBTNBG);
+}
+
+.permissions {
+  border-radius: 5px;
+  background: #093c850a;
+  color: var(--blue2);
+  border: 1px solid #ccdcf1;
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.formflexContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.userbgcontainer {
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 15px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: auto;
+  width: 100%;
+}
+
+.edituserButtons {
+  background: var(--userbtnBG);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.edituserButtons:hover {
+  background: #cbcbcb;
+}
+
+.edituserButtons span {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  margin-top: 2px;
+}

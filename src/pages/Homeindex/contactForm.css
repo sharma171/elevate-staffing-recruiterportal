@@ -1,0 +1,261 @@
+.input_field_form {
+  border: unset !important;
+  outline: 1px solid #b4b4b4;
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+  padding-left: 12px !important;
+}
+
+.input_field_form::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #969ab8;
+}
+
+.input_field_form:focus-visible {
+  outline: 1px solid #2a315b;
+  border: unset;
+}
+
+.ContactUsForm {
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /* background: #00000041; */
+}
+.ContactUsForm .contactFormOuter {
+  width: 100%;
+  /* max-width: 600px; */
+  height: 100%;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+}
+.ContactUsForm {
+  /* .contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+  } */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    font-weight: 500;
+    color: #0f3387;
+    padding: 3px;
+  }
+
+  .close:hover {
+    background: #0000001c;
+    border-radius: 10px;
+  }
+
+  .contact-form-container {
+    padding: 20px 0px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .contact-form-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .title {
+    color: #0b4da1;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.086px;
+  }
+  .description {
+    color: #969ab8;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.086px;
+    margin-bottom: 20px;
+  }
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-content .input-col {
+    gap: 5px;
+  }
+  .form-content .input-col .divider {
+    height: 20px;
+    width: 1px;
+    background: #d9d9d9;
+  }
+  .form-content .input-col .input svg {
+    margin-left: 12px;
+    margin-right: 0px;
+    width: 17px;
+    height: 17px;
+  }
+  .form-content .input-col .input {
+    width: 100%;
+    background: #ffffff;
+    border: 1.37465px solid #b4b4b4;
+    border-radius: 6.85714px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .form-content .input-col .input-label {
+    color: #454545;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .form-content .input-col .input .input-field::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #969ab8;
+  }
+  .form-content .input-col .input .input-field.mobileNumber {
+    width: 110px;
+    margin-right: 10px;
+  }
+  /* .form-content .input-col .input .input-field.messagetxt {
+    min-height: 90px;
+  } */
+  .form-content .input-col .input .mathquestion {
+    width: 100px;
+    margin-left: 14px;
+  }
+
+  .form-content .mobileNumber {
+    background-color: unset;
+  }
+
+  .input:has(.input-field:focus-visible) {
+    border-color: #2a315b;
+  }
+
+  .form-content .input-col .input .input-field.checkbox {
+    width: 15px;
+    height: 15px;
+    color: #9f9f9f;
+    margin: 15px 13px;
+  }
+  .form-content .input-col .input .input-field {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  .form-content .send-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12.2857px 54.8571px;
+    gap: 8.57px;
+    background: #0b4da1;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 6.85714px;
+  }
+
+  .form-content .send-btn:hover {
+    background: var(--blue);
+  }
+}
+@media (max-width: 1500px) {
+  .input_field_form {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .ContactUsForm .title {
+    color: #0b4da1;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.086px;
+    margin-bottom: 5px;
+  }
+  .ContactUsForm .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .ContactUsForm .description {
+    color: #727485;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.086px;
+    margin-bottom: 17px;
+  }
+  .ContactUsForm .form-content .input-col .input-label {
+    color: #454545;
+    font-weight: 500;
+  }
+  .ContactUsForm .form-content .input-col .input-label {
+    color: #454545;
+    font-weight: 500;
+  }
+  .ContactUsForm .form-content .input-col .input .input-field::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #727485;
+  }
+  .ContactUsForm .form-content .input-col .input .input-field {
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  .ContactUsForm .form-content .input-col .input .mathquestion {
+    width: 100px;
+    margin-left: 14px;
+    font-size: 12px;
+  }
+  .ContactUsForm .form-content .send-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8.2857px 54.8571px;
+    gap: 8.57px;
+    background: #0b4da1;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 6.85714px;
+  }
+}
+
+.legalFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #092154;
+  font-size: 12px;
+  color: #969ab8;
+  gap: 10px;
+}
+.legalFooter p {
+  width: 100%;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+html:has(body .overlay-containerouter) {
+  overflow: hidden !important;
+}

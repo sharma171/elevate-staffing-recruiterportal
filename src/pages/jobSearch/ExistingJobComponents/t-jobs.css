@@ -1,0 +1,978 @@
+.resumeTab {
+    transition: all 0.6s;
+}
+* .align-items-center {
+    align-items: center;
+}
+* .justify-content-between {
+    justify-content: space-between;
+}
+* .d-flex {
+    display: flex;
+}
+* h1, * h2, * h3, * h4, * h5, * h6 {
+    margin: unset;
+}
+.resAi .resumeOuter.resumeAi .resumeTab {
+    padding: 18px 24px;
+    border-radius: 30px;
+    padding-bottom: 24px;
+}
+
+.resumeOuter {
+    align-content: center;
+    align-items: center;
+    animation: popupbg .5s ease-out 0s 1;
+    background: rgba(236, 236, 236, 0.91);
+    backdrop-filter: blur(37.5px);
+    display: flex
+;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.resumeOuter.light .resumeTab {
+    background: #F7F7F7;
+    box-shadow: 0px 0px 29.3px rgba(0, 0, 0, 0.08);
+}
+.resAi .resumeTab {
+    animation: popupcont 1s ease-out 0s 1;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px #7474741f;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    transform: translate(0);
+    width: 80%;
+    max-width: 1400px;
+    background: #333a54;
+    border-radius: 18px;
+}
+
+.t-job-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    padding: 11px 18px;
+    gap: 12px;
+    cursor: pointer;
+    background: #40189D;
+    width: auto !important;
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+    animation: opacityAnim 0.6s ease-in-out;
+}
+
+@keyframes opacityAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.t-job-btn:hover {
+    transform: scale(1.1);
+    background-color: #5A2EBF;
+}
+
+.t-job-btn img {
+    width: 20px;
+}
+
+.tjobsPopup .closeNew {
+    width: 28px;
+    height: 28px;
+    top: 18px;
+    right: 24px;
+    background: rgb(4 116 183);
+    color: #fff;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    rotate: 45deg;
+    top: 20px;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+}
+
+.tjobsPopup .closeNew:hover {
+    transform: scale(1.05);
+}
+
+.tjobsPopup .t-head {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 12px;
+}
+
+.tjobsPopup .t-head img {
+    width: 20px;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.tjobsPopup .t-head .head {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    line-height: 30px;
+    background: linear-gradient(90deg, #3c20a9 0%, #118ab2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
+.tjobsPopup .dividerLine {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #3E1C9A 0%, #008845 20%);
+    transition: width 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .instruction {
+    gap: 10px;
+    margin: 5px 0 0 0;
+    transition: opacity 0.6s ease;
+    display: flex;
+}
+
+.tjobsPopup .t-jobsContent .instruction img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .instruction span {
+    color: #006B36;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .jdHead {
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #40189D;
+    margin-top: 30px;
+    transition: color 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .jdHead img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .jdPara {
+    font-size: 16px;
+    font-weight: 400;
+    color: #464646;
+    margin-top: 5px;
+    transition: color 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .corner-box {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .styled-textarea {
+    background: #F5F5F5;
+    color: #464646;
+    border-radius: 10px;
+    border: 1px solid #40189d3b;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 24vh;
+    font-size: 14px;
+    resize: none;
+    transition: all 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .congratulations {
+    display: flex;
+    flex-direction: column;
+        gap: 37px;
+        margin: 50px auto;
+        align-content: center;
+        align-items: center;
+        animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resumeTab.tjobsPopup .congratulations .congratsStatement {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    color: #009f86;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .congratulations img {
+    width: 180px;
+    height: 180px;
+    border-radius: 300px;
+    filter: contrast(1.1) saturate(1.1);
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .congratulations img:hover {
+    transform: scale(1.05);
+}
+
+.tjobsPopup .t-jobsContent {
+    max-height: 500px;
+    overflow: auto;
+    transition: max-height 0.6s ease;
+    position: relative;
+}
+
+.tjobsPopup .t-jobsContent .jd_matchbtn {
+    gap: 11px;
+    padding: 8px 16px;
+    background: #00539b;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 27px 30px 30px 27px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+}
+
+.tjobsPopup .t-jobsContent .jd_matchbtn:hover {
+    transform: scale(1.05);
+}
+
+.tjobsPopup .t-jobsContent .jd_matchbtn img {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-head {
+    background: linear-gradient(90deg, #E4E4E4 0%, #F0F0F0 100%);
+    border-radius: 24px;
+    padding: 10px 14px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.04);
+    margin: 22px 0;
+    transition: background 0.6s ease, box-shadow 0.6s ease;
+    cursor: pointer;
+}
+
+.resumeTab.tjobsPopup .jd-head .suggestion-button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #30189D;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: color 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-head .suggestion-icon {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-head .jddropdown {
+    rotate: 270deg;
+    transition: rotate 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-head .jddropdown.active {
+    rotate: 0deg;
+}
+
+.resumeTab.tjobsPopup .jd-content {
+    background: #EFEFEF;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.04);
+    gap: 5px;
+    display: none;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.resumeTab.tjobsPopup .jd-content.active {
+    display: flex;
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resumeTab.tjobsPopup .jd-content .suggestionHead,
+.resumeTab.tjobsPopup .jd-content .CopyButton {
+    border: 2px solid #40189D;
+    border-radius: 27px;
+    padding: 4px 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+    color: #40189D;
+    transition: all 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-content .CopyButton {
+    color: #1981CB;
+    border: 2px solid #1981CB;
+}
+
+.resumeTab.tjobsPopup .jd-content .suggestionHead .icon,
+.resumeTab.tjobsPopup .jd-content .CopyButton .copyIcon {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-content .list-unstyled {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #454545;
+    margin-top: 10px;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    transition: opacity 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-content .list-unstyled li {
+    position: relative;
+    transition: transform 0.6s ease;
+}
+
+.resumeTab.tjobsPopup .jd-content .list-unstyled li::after {
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: 40%;
+    width: 10px;
+    height: 4px;
+    /* background: #6F6C6C; */
+    /* border-radius: 5px; */
+    transition: width 0.6s ease, background-color 0.6s ease;
+}
+
+.resumeOuter.resumeAi .AutoApplyTab {
+    padding: 18px 24px;
+    border-radius: 30px;
+    padding-bottom: 24px;
+    background: #F7F7F7;
+    box-shadow: 0px 0px 29.3px rgba(0, 0, 0, 0.08);
+    font-size: 18px;
+    font-weight: 400;
+    animation: popupcont 0.6s ease-out;
+    left: 0;
+    position: relative;
+    top: 0;
+    transform: translate(0);
+    width: 80%;
+    max-width: 1000px;
+}
+
+@keyframes popupcont {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resumeOuter.resumeAi .AutoApplyTab .col-cont {
+    gap: 10px;
+    transition: gap 0.6s ease;
+}
+.resumeOuter.resumeAi .AutoApplyTab .col-cont {
+    gap: 10px;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .top-head {
+    gap: 12px;
+    margin: 0 auto;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #314BF3;
+    transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .top-head:hover {
+    transform: translateY(-2px);
+}
+
+.AutoApplyTab .col-cont .top-head .icon {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .top-head:hover .icon {
+    transform: scale(1.1);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont {
+    gap: 30px;
+    transition: gap 0.6s ease;
+    align-items: center;
+    position: relative;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs {
+    width: calc(100% - 350px);
+    transition: width 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .top-head-AutoApply {
+    gap: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    background: linear-gradient(90deg, #0148A9 0%, #019C9F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    align-items: center;
+    margin: 16px 0;
+    transition: transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .top-head-AutoApply:hover {
+    transform: translateY(-2px);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .top-head-AutoApply .autoapplyicons {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .top-head-AutoApply:hover .autoapplyicons {
+    transform: scale(1.1);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .para {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #626262;
+    transition: color 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row {
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: gap 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row .featureCard {
+    gap: 13px;
+    padding: 24px 31px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 1px rgba(53, 72, 91, 0.14), 0px 3px 2px rgba(0, 0, 0, 0.04), 0px 7px 5px rgba(0, 0, 0, 0.02), 0px 13px 10px rgba(0, 0, 0, 0.02), 0px 22px 17px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    font-size: 17px;
+    width: 100%;
+    max-width: calc(50% - 16px);
+    align-items: center;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row .featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 0px 1px rgba(53, 72, 91, 0.2),
+                0px 5px 4px rgba(0, 0, 0, 0.08),
+                0px 10px 8px rgba(0, 0, 0, 0.04),
+                0px 16px 13px rgba(0, 0, 0, 0.04),
+                0px 25px 20px rgba(0, 0, 0, 0.04);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row .featureCard .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    transition: transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row .featureCard:hover .icon {
+    transform: scale(1.1);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs {
+    width: 320px;
+    transition: width 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab {
+    background: #EAECF8;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04),
+                0px 5px 18px rgba(0, 0, 0, 0.06),
+                0px 24px 83px rgba(0, 0, 0, 0.1);
+    border-radius: 44px;
+    padding: 30px;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08),
+                0px 8px 20px rgba(0, 0, 0, 0.08),
+                0px 28px 85px rgba(0, 0, 0, 0.12);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-head {
+    font-weight: 600;
+    font-size: 20.62px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #372B9F;
+    margin: 0;
+    transition: color 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .price {
+    font-weight: 400;
+    font-size: 26.5px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.8125px;
+    color: #111019;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .price-info {
+    margin-top: -20px;
+    transition: margin 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .listhead {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #141131;
+    transition: color 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .list-bullet {
+    gap: 12px;
+    transition: gap 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .item {
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0819231px;
+    color: #141131;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .item:hover {
+    transform: translateX(5px);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .item svg {
+    width: 25px;
+    height: 29px;
+    min-width: 25px;
+    min-height: 28px;
+    max-height: 25px;
+    transition: transform 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .item:hover svg {
+    transform: scale(1.1);
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-buy {
+    padding: 11px 24px 11px 23.42px;
+    background: #000482;
+    box-shadow: 0px 0px 0px 4.45038px rgba(85, 89, 221, 0.4);
+    border-radius: 9999px;
+    color: #fff;
+    margin: 17px auto;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-buy:hover {
+    transform: translateY(-2px) scale(1.02);
+    background: #0006b0;
+    box-shadow: 0px 0px 0px 4.45038px rgba(85, 89, 221, 0.6);
+}
+
+/* Add entrance animation for the entire section */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.AutoApplyTab .col-cont {
+    animation: fadeInUp 0.6s ease-out;
+}
+/* Pricing card styles */
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab {
+    background: linear-gradient(135deg, #EAECF8, #F3F6FF);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04),
+                0px 5px 18px rgba(0, 0, 0, 0.06),
+                0px 24px 83px rgba(0, 0, 0, 0.1);
+    border-radius: 44px;
+    padding: 30px;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden; /* Ensure particles don't overflow the card */
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08),
+                0px 8px 20px rgba(0, 0, 0, 0.08),
+                0px 28px 85px rgba(0, 0, 0, 0.12);
+}
+
+/* Particle animation using pseudo-elements */
+.AutoApplyTab .close {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    color: #080b84;
+    rotate: 45deg;
+
+}
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab::before,
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgb(14 16 139);
+    border-radius: 50%;
+    animation: particleMove 8s linear infinite;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab::before {
+    top: 10%;
+    left: 20%;
+    animation-duration: 4s;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab::after {
+    bottom: 15%;
+    right: 25%;
+    animation-duration: 6s;
+}
+
+/* Particle movement keyframes */
+@keyframes particleMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(30px, -20px) scale(0.8);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-20px, 20px) scale(1.2);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(20px, 30px) scale(0.9);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Vibrant heading styles */
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-head {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #372B9F;
+    margin: 0;
+    transition: color 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-head:hover {
+    color: #25007D;
+}
+
+/* Animated buy button */
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-buy {
+    padding: 11px 24px 11px 23.42px;
+    background: linear-gradient(90deg, #000482, #5A60E9);
+    box-shadow: 0px 0px 0px 4.45038px rgba(85, 89, 221, 0.4);
+    border-radius: 9999px;
+    color: #fff;
+    margin: 17px auto;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-buy:hover {
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(90deg, #0006b0, #7A85FF);
+    box-shadow: 0px 0px 0px 4.45038px rgba(85, 89, 221, 0.6);
+}
+
+/* Entrance animation for the entire section */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.AutoApplyTab .col-cont {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.resAi .bgloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F7F7F7;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.resAi .bgloader .loader-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 7px;
+    border-radius: 200px;
+    background: #0006b0;
+    background: linear-gradient(#0006b0,#008512);
+}
+.resAi .bgloader .loader-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
+}
+
+@media (max-width:900px) {
+    .row-flex.Auto-Apply-Cont {
+        flex-direction: column !important;
+        max-height: 600px;
+        overflow: auto;
+        padding-bottom: 30px;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .lhs {
+        width: calc(100%);
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .para {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #626262;
+        transition: color 0.6s ease;
+    }
+    .tjobsPopup .t-jobsContent .instruction span {
+        color: #006B36;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        transition: color 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .top-head-AutoApply {
+        gap: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        background: linear-gradient(90deg, #0148A9 0%, #019C9F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        align-items: center;
+        margin: 10px 0;
+        transition: transform 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .lhs .card-row .featureCard {
+        gap: 13px;
+        padding: 24px 18px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0px 1px rgba(53, 72, 91, 0.14), 0px 3px 2px rgba(0, 0, 0, 0.04), 0px 7px 5px rgba(0, 0, 0, 0.02), 0px 13px 10px rgba(0, 0, 0, 0.02), 0px 22px 17px rgba(0, 0, 0, 0.02);
+        border-radius: 6px;
+        font-size: 14px;
+        width: 100%;
+        max-width: calc(50% - 16px);
+        align-items: center;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-head {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: center;
+        color: #372B9F;
+        margin: 0;
+        transition: color 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .price {
+        font-weight: 400;
+        font-size: 22.5px;
+        line-height: 32px;
+        display: flex
+    ;
+        align-items: center;
+        letter-spacing: -0.8125px;
+        color: #111019;
+        transition: all 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .price-info {
+        margin-top: -19px;
+        transition: margin 0.6s ease;
+        font-size: 14px;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .listhead {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 40px;
+        color: #141131;
+        transition: color 0.6s ease;
+        margin-bottom: -10px;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .item {
+        gap: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex
+    ;
+        align-items: center;
+        letter-spacing: 0.0819231px;
+        color: #141131;
+        transition: all 0.6s ease;
+    }
+    .AutoApplyTab .col-cont .Auto-Apply-Cont .rhs .pricingtab .p-buy {
+        padding: 8px 24px 8px 23.42px;
+        background: linear-gradient(90deg, #000482, #5A60E9);
+        box-shadow: 0px 0px 0px 4.45038px rgba(85, 89, 221, 0.4);
+        border-radius: 9999px;
+        color: #fff;
+        margin: 15px auto;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.6s ease;
+    }
+}

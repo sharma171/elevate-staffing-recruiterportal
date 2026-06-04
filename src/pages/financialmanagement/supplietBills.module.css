@@ -1,0 +1,194 @@
+.btnPlain {
+  gap: 8px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--bs-body-color, #212529);
+}
+
+.btnPrimary {
+  gap: 8px;
+  height: 40px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--bs-primary, #0d6efd);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btnOutline {
+  gap: 8px;
+  height: 36px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.tab {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  margin-right: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tabActive {
+  background: var(--bs-body-bg, #fff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.selectFake {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  outline: none;
+}
+
+.tableWrap {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thead {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  transition: background 0.12s ease;
+}
+
+.tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.badgeEmoji {
+  font-size: 14px;
+}
+
+.badgeText {
+  font-weight: 600;
+}
+
+.badgeDefault {
+  background: #eef2ff;
+  color: #312e81;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+.badgeSecondary {
+  background: #fff7ed;
+  color: #92400e;
+  border: 1px solid rgba(245, 158, 11, 0.12);
+}
+
+.badgeDestructive {
+  background: #fff1f2;
+  color: #9f1239;
+  border: 1px solid rgba(239, 68, 68, 0.12);
+}
+
+.badgePrimary {
+  background: #e6f4ff;
+  color: #0b5ed7;
+  border: 1px solid rgba(11, 94, 215, 0.12);
+}
+
+.badgeOutline {
+  background: transparent;
+  color: #374151;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.reviewBadge {
+  background: #fff8e1;
+  color: #7a4b00;
+  border: 1px solid #ffe9b8;
+}
+
+.badgeIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .th {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+  .searchInput {
+    height: 36px;
+    padding-left: 36px;
+  }
+  .selectFake {
+    height: 36px;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,107 @@
+.container {
+  padding: 24px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: -8px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #1e40af;
+}
+
+.title {
+  font-size: 20px;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+/* Default: Responsive Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(45%, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: #f9f9fe;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 2.77px rgba(9, 30, 66, 0.31), 0px 4.16px 27.72px rgba(9, 30, 66, 0.1);
+}
+
+.bankName {
+  color: #5c4cdb;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
+.accountType {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #374151;
+  gap: 10px;
+}
+
+.infoItem {
+  margin-bottom: 2px;
+}
+
+.percentage {
+  color: #5c4cdb;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  gap: 15px;
+}
+
+.depositSplit {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.totalRow {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.checkmark {
+  color: green;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.totalText {
+  font-weight: 600;
+  color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 20px 0px;
+  }
+}

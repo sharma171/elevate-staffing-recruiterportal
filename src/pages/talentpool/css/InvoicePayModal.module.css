@@ -1,0 +1,140 @@
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.4rem;
+}
+
+.modalHeader h2 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.modalHeader p {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.modalGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modalSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField input,
+.inputField select,
+.inputField textarea {
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background-color: transparent;
+}
+
+.inputField select {
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.inputField textarea {
+  height: auto;
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.helperText {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.errorText {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.modalFooter {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .modalFooter {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.btnCancel {
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  color: #111827;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.btnCancel:hover {
+  background-color: #f9fafb;
+}
+
+.btnSubmit {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  background-color: #2563eb;
+}

@@ -1,0 +1,106 @@
+.searchbox,
+.searchboxMobile {
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  color: var(--placeholder);
+  background: var(--white);
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.searchbox img,
+.searchboxMobile img {
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+}
+
+.searchbox__input {
+  box-shadow: unset !important;
+  padding-left: 0px;
+  font-size: 14px;
+  padding: 0 !important;
+  background: var(--white) !important;
+  /* color: var(--placeholder) !important; */
+}
+
+.searchbox__input::placeholder {
+  color: var(--placeholder) !important;
+}
+
+@media (min-width: 768px) {
+  .searchbox {
+    display: flex;
+  }
+  .searchboxMobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .searchboxMobile .smallPoppup {
+    display: none;
+  }
+  .searchboxMobile {
+    display: flex;
+    position: relative;
+    overflow: unset;
+    padding: 8px 8px;
+  }
+  .searchboxMobile.active .smallPoppup .searchbox__input {
+    width: 100%;
+    display: unset;
+    font-size: 14px;
+    color: #333;
+  }
+  .searchboxMobile.active .smallPoppup {
+    position: absolute;
+    z-index: 9999;
+    padding: 5px 14px;
+    border-radius: 100px;
+    border-top-left-radius: 99px !important;
+    border-bottom-left-radius: 99px !important;
+    top: calc(100% + 12px);
+    right: 0;
+    background: #fff;
+    width: 185px;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbox {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .searchboxMobile {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 9999;
+    transition: all 0.5s;
+    flex-wrap: nowrap;
+    gap: 0px;
+    display: flex;
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px 0px 14px #00003329;
+    flex-direction: row;
+  }
+  .searchboxMobile.active .smallPoppup {
+    padding: 0px 14px 0px 9px;
+    border-radius: 100px;
+    border-top-left-radius: 99px !important;
+    border-bottom-left-radius: 99px !important;
+    position: unset;
+    background: #fff;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchboxMobile .smallPoppup {
+    display: none;
+  }
+}

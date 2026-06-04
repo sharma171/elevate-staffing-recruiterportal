@@ -1,0 +1,198 @@
+/* display properties */
+
+.d-flex{
+    display: flex;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.align-start{
+    align-items: start;
+}
+
+.align-end{
+    align-items: end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-start{
+    text-align: start;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: end;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.p-absolute{
+    position: absolute;
+}
+/* gaps */
+.gap-1{
+    gap: 4px;
+}
+
+.gap-2{
+    gap: 8px;
+}
+.gap-3{
+    gap: 12px;
+}
+.gap-4{
+    gap: 16px;
+}
+.gap-10{
+    gap: 30px;
+}
+
+/* common styles */
+
+.width-100{
+    width: 100%;
+}
+
+.height-100{
+    height: 100%;
+}
+
+.wh-100{
+    width: 100vw;
+}
+.vh-100{
+    height: 100vh;
+}
+.w-50{
+    width: 50%;
+}
+
+.h-50{
+    height: 50%;
+}
+
+/* margins */
+
+.mb-2{
+    margin-bottom: 6px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.v2-heading-1{
+    font-weight: 600;
+    font-size: 40px;
+}
+.heading-3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #1f3487;
+}
+
+.text-2{
+    font-size: 15px;
+    color: rgb(31, 31, 31);
+    line-height: 30px;
+}
+
+.text-3{
+    font-size: 13px;
+    color: #909090;
+}
+
+.text-4{
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #777676;
+}
+
+.text-5{
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.b-test{
+    border: solid 1px red;
+}
+
+.b-none{
+    border: none;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+}
+
+.v2-input:focus, .dropDown:focus{
+    outline: none;
+}
+
+.custom-dropdown{
+    position: relative;
+}
+
+.custom-dropdown select{
+    height: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.dropDown-default{
+    color: var(--clr-grey);
+}

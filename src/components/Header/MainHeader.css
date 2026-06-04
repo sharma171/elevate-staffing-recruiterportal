@@ -1,0 +1,141 @@
+.MainHeader {
+  padding: 12px 30px 12px 30px;
+  background: #062a63;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+
+  & .mainHRow {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    min-width: 0;
+
+    .logo {
+      width: 68px;
+      height: 46px;
+
+      .icon {
+        width: 68px;
+        height: 46px;
+      }
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+
+      .Company {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 5px;
+        color: #ffffff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .recruiterOrg {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.001em;
+        color: rgba(255, 255, 255, 0.8);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .addressRow {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+
+          .addressText {
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .MainHeaderPowerBy {
+    line-height: 1;
+  }
+
+  .company_name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .powerByText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .MainHeader {
+    padding: 10px;
+
+    .company_name {
+      font-size: 12px !important;
+    }
+
+    .powerByText {
+      font-size: 10px !important;
+    }
+
+    .MainHeaderPowerBy {
+      background: #1e3f72;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .MainHeader {
+    padding: 10px 12px 12px 12px !important;
+  }
+
+  .company_name {
+    font-size: 14px !important;
+  }
+
+  .powerByText {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .MainHeader {
+    padding: 12px 15px 12px 15px !important;
+  }
+
+  .company_name {
+    font-size: 14px !important;
+  }
+
+  .powerByText {
+    font-size: 10px !important;
+  }
+
+  .MainHeader {
+    & .mainHRow {
+      .brand {
+        .Company {
+          line-height: 20px !important;
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,231 @@
+.userbox {
+  min-height: 43px;
+  min-width: 43px;
+  height: 43px;
+  width: 43px;
+  position: relative;
+  border-radius: 150px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 10px 0 0 10px;
+}
+
+.container p {
+  margin: 0 0 0 10px;
+}
+
+.bodycontainer {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 40px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.headerButtons {
+  border: 1px solid var(--lightThemecolor);
+  padding: 14px 25px 10px;
+  font-weight: 500;
+  border-radius: 20px;
+  height: max-content;
+  white-space: nowrap;
+}
+
+.headerButtons span {
+  color: var(--blue2);
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.headerButtons:hover,
+.activeTab {
+  background: var(--blue2);
+  color: white;
+}
+
+.headerButtons:hover span,
+.activeTab span,
+.activeTab .cssIcon,
+.headerButtons:hover .cssIcon {
+  filter: brightness(100);
+}
+
+.bodyHeaer {
+  color: var(--blue2);
+}
+
+.bodyHeaer span {
+  height: 22px;
+  width: 22px;
+  font-size: 22px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.subcard {
+  padding-bottom: 25px;
+}
+
+.subcardheading {
+  font-size: 18px;
+}
+
+.subCardIcon {
+  border-radius: 1000px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  background: #afc8e380;
+}
+
+.subCardIcon span {
+  font-size: 16px;
+  color: var(--blue2);
+}
+
+.table {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px 0 0 0;
+  min-height: 250px;
+}
+
+.lightColor,
+.lightColor * {
+  color: var(--lightColor) !important;
+}
+
+.tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Light gray for odd rows */
+}
+
+.tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.th {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.th img,
+.th span {
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 1000px;
+  margin-bottom: 2px;
+}
+
+.dotred {
+  background: #be2b29;
+}
+
+.statusbox {
+  padding: 8px 20px;
+  background: #fef1e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  width: max-content;
+}
+
+.statusbox div {
+  background: #fca739;
+}
+
+.statusbox span {
+  color: #fca739;
+}
+
+.Reviewing {
+  background: #fef1e1;
+}
+
+.Reviewing div {
+  background: #fca739;
+}
+
+.Reviewing span {
+  color: #fca739;
+}
+
+.Valid,
+.Approoved,
+.Approved {
+  background: #f0feed;
+}
+
+.Valid div,
+.Approoved div,
+.Approved div {
+  background: #007c0f;
+}
+
+.Valid span,
+.Approoved span,
+.Approved span {
+  color: #007c0f;
+}
+
+.Expired {
+  background: rgba(214, 55, 34, 0.1);
+}
+
+.Expired div {
+  background: #d63722;
+}
+
+.Expired span {
+  color: #d63722;
+}
+
+.downloadIcon {
+  background: rgba(76, 211, 170, 1);
+  color: white;
+  padding: 8px 8px 6px 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cssIcon {
+  width: 20px;
+  margin-bottom: 7px;
+}
+
+.bodyHeadericon {
+  width: 22px;
+}
+
+@media screen and (max-width: 520px) {
+  .bodycontainer {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+}

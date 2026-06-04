@@ -1,0 +1,166 @@
+.section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.infoSection {
+  background-color: #f1f1f980;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.warning {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+select,
+textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+.timeInfo {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #eff6ff;
+  border-radius: 8px;
+  font-weight: 500;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.summary {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #7c3bed0d;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #7c3bed33;
+}
+
+.counter {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: right;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.footer button:last-child {
+  background: #7c3aed;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.footer button:first-child {
+  background: #e9e9e9;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.footer button:last-child:hover {
+  background: #985dff;
+}
+
+.footer button:first-child:hover {
+  background: #d6d6d6;
+}
+
+/* ===========================
+   RSUITE CALENDAR (SCOPED)
+   NO GLOBAL IMPACT
+=========================== */
+
+.calendar {
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  max-width: 320px;
+}
+
+/* Header title */
+.calendar :global(.rs-calendar-header-title) {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Weekdays */
+.calendar :global(.rs-calendar-table-header-cell) {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Cell padding */
+.calendar :global(.rs-calendar-table-cell) {
+  padding: 2px;
+}
+
+/* Date box */
+.calendar :global(.rs-calendar-table-cell-content) {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+/* Hover */
+.calendar :global(.rs-calendar-table-cell-content:hover) {
+  background: #eef2ff;
+}
+
+/* TODAY → green */
+.calendar :global(.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content) {
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* SELECTED → purple */
+.calendar :global(.rs-calendar-table-cell-selected .rs-calendar-table-cell-content) {
+  background: #7c3aed;
+  color: white;
+}
+
+/* Disabled */
+.calendar :global(.rs-calendar-table-cell-disabled .rs-calendar-table-cell-content) {
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Outside month */
+.calendar :global(.rs-calendar-table-cell-un-same-month .rs-calendar-table-cell-content) {
+  opacity: 0.4;
+}
+
+.calendar :global(.rs-calendar-btn-today) {
+  background: #7c3aed;
+  color: white;
+}

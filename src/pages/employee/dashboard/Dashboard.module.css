@@ -1,0 +1,190 @@
+.userbox {
+  min-height: 43px;
+  min-width: 43px;
+  height: 43px;
+  width: 43px;
+  position: relative;
+  border-radius: 150px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.headerCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 10px 0 0 10px;
+}
+
+.container p {
+  margin: 0 0 0 10px;
+}
+
+.projectClass {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.projectClass span {
+  font-size: 30px;
+  background: linear-gradient(0deg, rgba(28, 80, 132, 0.8706) 0%, #7b68ee 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pendingClass {
+  padding: 15px;
+  background: linear-gradient(180deg, rgba(255, 181, 44, 0.15) 0%, rgba(245, 129, 90, 0.15) 100%);
+  border-radius: 20px;
+}
+
+.pendingClass span {
+  font-size: 30px;
+  background: linear-gradient(180deg, #ffb62c 0%, #f5815a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.overdueClass {
+  padding: 15px;
+  background: linear-gradient(190deg, rgba(235, 72, 134, 0.15) 0%, rgba(175, 97, 154, 0.15) 100%);
+  border-radius: 20px;
+}
+
+.overdueClass span {
+  font-size: 30px;
+  background: linear-gradient(190deg, #eb4887 0%, #af619a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.attentionClass {
+  padding: 15px;
+  background: linear-gradient(0deg, rgba(201, 128, 43, 0.15) 0%, rgba(158, 96, 24, 0.15) 100%);
+  border-radius: 20px;
+}
+
+.attentionClass span {
+  font-size: 30px;
+  color: #c9802b;
+}
+
+.headingCards {
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px 25px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.cardText {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.subcard {
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--black_description);
+}
+
+.subCardIcon {
+  border-radius: 1000px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+.subCardIcon span {
+  font-size: 16px;
+}
+
+.iconBlue {
+  background: #dbeafe;
+}
+
+.iconBlue span {
+  color: #2563eb;
+}
+
+.iconGreen {
+  background: #dbeafe;
+}
+
+.iconGreen span,
+.greenText {
+  color: #16a3a4;
+}
+
+.iconOrange {
+  background: #fef9c3;
+}
+
+.iconOrange span,
+.orangecolor {
+  color: #ca8a04;
+}
+
+.iconred {
+  background: #fee2e2;
+}
+
+.iconred span,
+.redcolor {
+  color: #dc2626;
+}
+
+/* ---------- */
+.subcardheading {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cardText {
+  font-size: 14px;
+  color: var(--gray_description);
+}
+
+.cardTextsmalll {
+  font-size: 12px;
+  color: var(--gray_description);
+}
+
+.viewButton {
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,399 @@
+.content.profilePage {
+  width: 100%;
+}
+.content.profilePage .registerTopHead svg {
+  width: 20px;
+}
+.content.profilePage .registerTopHead {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.main-dash .content.profilePage .saveButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 28px;
+  gap: 10px;
+  border: none;
+  margin-left: auto;
+  margin-top: 2px;
+  background: #0b4da1;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.main-dash .content.profilePage .registerForm {
+  & .formInner .input {
+    input,
+    textarea,
+    select {
+      border: 1px solid #d5d5d5;
+      background: transparent;
+      padding: 12px 16px;
+      color: #454545;
+      border-radius: 10px;
+    }
+  }
+}
+.main-dash .content.profilePage .registerForm {
+  gap: 30px;
+}
+.main-dash .content.profilePage .registerForm {
+  .formInner {
+    gap: 16px;
+  }
+}
+.main-dash .content.profilePage .registerForm {
+  .formInner .inputRow {
+    width: 100%;
+    gap: 20px;
+  }
+}
+.main-dash .content.profilePage .registerForm {
+  & .formInner .input .contactinput {
+    margin: 5px 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+  }
+}
+.main-dash .content.profilePage .registerForm {
+  & .formInner .input .contactinput {
+    input,
+    textarea,
+    select {
+      border: 0;
+      margin: 0;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border: 0;
+      margin: 0;
+      outline: none;
+    }
+  }
+}
+.main-dash .content.profilePage .registerForm.profilePage .formInner .input span.head {
+  font-size: 14px;
+}
+
+.main-dash .content.profilePage .registerForm.profilePage {
+  background: transparent;
+  box-shadow: none;
+  padding: 5px 0;
+  gap: 15px;
+}
+.main-dash .content.profilePage .registerForm {
+  & .formInner .input {
+    input,
+    textarea,
+    select {
+      border: 1px solid #d5d5d5;
+      background: transparent;
+      padding: 9px 16px;
+      color: #454545;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border: 1px solid #0b4da1;
+      outline-color: #0b4da1;
+      background: transparent;
+      padding: 9px 16px;
+      font-size: 16px;
+      color: #0b4da1;
+      border-radius: 10px;
+    }
+  }
+}
+.main-dash .content.profilePage .registerForm {
+  & .formInner .input {
+    span {
+      color: rgb(34 157 74);
+      font-weight: 500;
+      line-height: 1;
+      font-size: 15px;
+      margin-left: 0px;
+      margin-bottom: 5px;
+      background: unset;
+      margin-right: auto;
+      z-index: 10;
+      padding: 0;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: #676767;
+    }
+  }
+}
+.main-dash .content.profilePage .registerTopHead h4 {
+  font-size: 18px !important;
+  font-weight: 500;
+  color: #0b4da1;
+}
+.content.profilePage .profileHead {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.content.profilePage .profile-row svg {
+  width: 53px;
+  height: 53px;
+  margin-bottom: 0;
+}
+.content.profilePage .profile-row .name {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+.content.profilePage .profile-row .email {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #718096;
+}
+.content.profilePage .profileButtons .headerButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px;
+  background: #ebecef;
+  box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border: none;
+}
+.content.profilePage .profileButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.content.profilePage .profile-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.f-screen-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  animation: 0.5s ease-out 0s 1 popupbg;
+  z-index: 10;
+}
+.f-screen-popup .popup-cont {
+  background: linear-gradient(98.5deg, #87e7a163 53.12%, #3fbf62d4 155.43%);
+  border-radius: 16px;
+  padding: 30px 30px;
+  color: #242424;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  top: 0%;
+  animation: 1s ease-out 0s 1 popupcont;
+  left: 0%;
+  width: 560px;
+  transform: translate(0%, 0%);
+  box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
+}
+
+.f-screen-popup .popup-cont .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  rotate: 45deg;
+  cursor: pointer;
+  background: #fff;
+  animation: 2s ease-out 0s 1 popupclose;
+  border-radius: 100px;
+}
+.f-screen-popup .popup-cont h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #0c8e2f;
+}
+@keyframes popupbg {
+  0% {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.reset-main {
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfcfc;
+}
+.reset-container {
+  width: 500px;
+  height: fit-content;
+  padding: 30px 25px 30px 25px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.text-container {
+  background-color: transparent !important;
+  text-align: center;
+  line-height: 38px;
+}
+
+label {
+  font-size: 13px;
+  /* color: #909090; */
+}
+
+.inputField,
+input {
+  /* background-color: white !important; */
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.reset-input {
+  padding: 10px;
+  border: solid 1px #c9c9c9;
+  margin-top: 5px;
+  outline: none;
+}
+
+.reset-btn {
+  width: 100%;
+  /* text-align: center !important; */
+  padding: 10px;
+  background-color: #1f3487;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+input::placeholder {
+  color: gray; /* Change to any color */
+  opacity: 1; /* Make sure it's fully visible */
+}
+
+/* For better browser support */
+input::-webkit-input-placeholder {
+  color: gray;
+}
+input:-moz-placeholder {
+  color: gray;
+}
+input::-moz-placeholder {
+  color: gray;
+}
+input:-ms-input-placeholder {
+  color: gray;
+}
+.input-container-3 {
+  width: 80% !important;
+}
+
+.input-3 {
+  width: 23% !important;
+}
+
+.head {
+  font-size: 13px;
+}
+
+.login-input {
+  margin: 5px 0px 5px 0px;
+}
+
+.error {
+  color: red;
+}
+
+.heading {
+  color: #2d5ab4 !important;
+}
+@media (max-width: 768px) {
+  .twoGridView {
+    grid-template-columns: auto !important;
+  }
+
+  .content.profilePage .profile-row .name {
+    font-size: 18px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 150px;
+  }
+  .content.profilePage .profile-row .email {
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 150px;
+  }
+  .content.profilePage .profileButtons .headerButtons .mobHidden {
+    display: none;
+  }
+  .main-dash .content.profilePage .registerForm {
+    .formInner .inputRow {
+      width: 100%;
+      gap: 12px;
+      flex-direction: column;
+    }
+    .formInner .inputRow .input {
+      width: 100% !important;
+    }
+  }
+  .main-dash .content.profilePage .registerTopHead h4 {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    line-height: 25px;
+  }
+  .content.profilePage .registerTopHead svg {
+    display: none;
+  }
+}
+
+.twoGridView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

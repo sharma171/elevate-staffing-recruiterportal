@@ -1,0 +1,72 @@
+.mainCOntainer {
+  background: #f4f7fc;
+}
+
+.sectionContainer {
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px #00000015;
+  margin-bottom: 20px;
+}
+
+.headerSection {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.themeColor {
+  color: var(--blue2);
+}
+
+.normalfont {
+  color: var(--gray_description);
+  font-size: 14px;
+}
+
+.instructionText {
+  color: var(--black_description);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.label {
+  font-size: 16px;
+  color: var(--gray_description);
+  margin-bottom: 5px;
+}
+
+.sepline {
+  background: #d9d9d9;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.sectionsubHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black_description);
+  margin-bottom: 15px;
+}
+
+.formflexContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  gap: 20px;
+}
+
+.formflexContainerPermission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.viewBadge {
+  background: #efefef;
+  color: var(--blue2);
+  font-size: 12px;
+  padding: 4px 15px;
+  border-radius: 1000px;
+  margin-left: 5px;
+}

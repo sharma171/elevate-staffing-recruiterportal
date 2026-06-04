@@ -1,0 +1,154 @@
+.container {
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 2px 0 0 10px;
+}
+
+.container p {
+  margin: 8px 0 0 10px;
+}
+
+.userbox {
+  min-height: 43px;
+  min-width: 43px;
+  border-radius: 1000px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.userIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.headerboxglass button {
+  padding: 12px;
+}
+
+.tabContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.tabContainer {
+  gap: 10px;
+}
+
+.tabBTN {
+  border-radius: 20px !important;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.activetab,
+.inactivetab:hover,
+.activetab:hover {
+  background: var(--themeBTNBG);
+  color: var(--white);
+}
+
+.inactivetab {
+  color: var(--themeBTNBG);
+  border: 1px solid var(--tabborder);
+}
+
+.addSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  border-radius: 15px;
+  background: var(--white);
+  padding: 12px;
+  white-space: nowrap;
+}
+
+.sep {
+  display: block;
+  height: 100%;
+  min-height: 20px;
+  width: 1px;
+  background: var(--vrsep);
+}
+
+strong {
+  color: var(--themeBTNBGDARK);
+}
+
+.themefont {
+  color: var(--themefontcolor) !important;
+}
+
+.themefontDark {
+  color: var(--themeBTNBGDARK) !important;
+}
+
+.tabicon {
+  height: 16px;
+}
+
+.tabBTN:hover .tabicon,
+.activetabicon {
+  filter: brightness(100);
+}
+
+@media (max-width:996px) {
+  .container h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.4em;
+  }
+  .container p {
+    margin: 4px 0 0 0;
+  }
+  .headerboxglass button {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+  .headerboxglass button .tabicon {
+    height: 16px;
+  }
+  .headerboxglass button span {
+    display: none;
+  }
+  .activetab span {
+    display: block !important;
+    width: 74px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .addSection {
+    padding: 8px 12px;
+  }
+}
+@media (max-width:768px) {
+  
+  .container h2 {
+    font-size: 20px;
+    line-height: 30px;
+  } 
+  .headerboxglass button .tabicon {
+    height: 16px;
+  } 
+}
+@media (max-width:590px) {
+  .container h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .themefontDark.textBtn {
+    display: none !important;
+  }
+  .activetab span {
+    display: none !important;
+  }
+}

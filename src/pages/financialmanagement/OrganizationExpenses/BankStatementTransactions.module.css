@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.searchRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  flex: 1;
+}
+.searchBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.tableCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.04);
+}
+.center {
+  padding: 28px;
+  color: #64748b;
+  text-align: center;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.table th,
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 14px;
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.descCol {
+  max-width: 520px;
+}
+.desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.employee {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.userIcon {
+  width: 14px;
+  height: 14px;
+}

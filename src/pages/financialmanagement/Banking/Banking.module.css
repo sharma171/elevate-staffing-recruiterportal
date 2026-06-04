@@ -1,0 +1,210 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.subtitle {
+  color: #6b7280;
+  margin-top: 6px;
+}
+.tabList {
+  display: flex;
+  gap: 8px;
+}
+.tab {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid #e6e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.active {
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
+}
+
+.tabContent {
+  margin-top: 12px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: transparent;
+  border: 1px solid var(--blue2);
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.backBtn:hover {
+  background: #e6e7eb;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+/* ConnectedAccountsList / local UI styles */
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+.lead {
+  color: #6b7280;
+  margin-top: 4px;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+.loader {
+  height: 32px;
+  width: 32px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emptyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 36px;
+  border: 1px solid #e6e7eb;
+  border-radius: 8px;
+  text-align: center;
+}
+.iconWrap {
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 9999px;
+}
+.buildingIcon {
+  height: 32px;
+  width: 32px;
+  color: #6b7280;
+}
+.emptyTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.emptyText {
+  color: #6b7280;
+  max-width: 480px;
+}
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* Account card */
+.card {
+  border: 1px solid #e6e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.bankName {
+  font-weight: 600;
+}
+.mask {
+  color: #6b7280;
+  font-size: 13px;
+}
+.balance {
+  text-align: right;
+}
+.balanceLabel {
+  font-size: 12px;
+  color: #6b7280;
+}
+.balanceAmount {
+  font-weight: 700;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e7eb;
+  background: transparent;
+  cursor: pointer;
+}
+.danger {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #fee2e2;
+  background: #fff0f0;
+  color: #b91c1c;
+  cursor: pointer;
+}
+.connectBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e7eb;
+  background: #fff;
+  cursor: pointer;
+}
+.iconSmall {
+  height: 16px;
+  width: 16px;
+}
+.iconTiny {
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+}

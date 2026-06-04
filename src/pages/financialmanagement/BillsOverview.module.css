@@ -1,0 +1,230 @@
+:root {
+  --Bills_Overview-bg: #ffffff;
+  --Bills_Overview-muted: #6b7280;
+  --Bills_Overview-text: #0f172a;
+  --Bills_Overview-card-border: #e2e8f0;
+  --Bills_Overview-primary: #2563eb;
+  --Bills_Overview-danger: #ef4444;
+  --Bills_Overview-warning: #f97316;
+  --Bills_Overview-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.03);
+  --Bills_Overview-shadow-lg: 0 14px 50px rgba(15, 23, 42, 0.12);
+  --Bills_Overview-radius: 12px;
+}
+
+/* metrics grid */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .metricsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* card */
+.card {
+  background: var(--Bills_Overview-bg);
+  border: 1px solid var(--Bills_Overview-card-border);
+  border-radius: var(--Bills_Overview-radius);
+  box-shadow: var(--Bills_Overview-shadow-sm);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.rowCenter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.flex1 {
+  flex: 1;
+}
+
+.iconBoxPrimary,
+.iconBoxDestructive,
+.iconBoxWarning {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconBoxPrimary {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--Bills_Overview-primary);
+}
+.iconBoxDestructive {
+  background: rgba(239, 68, 68, 0.08);
+  color: var(--Bills_Overview-danger);
+}
+.iconBoxWarning {
+  background: rgba(249, 115, 22, 0.08);
+  color: var(--Bills_Overview-warning);
+}
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.smallMuted {
+  margin: 0;
+  font-size: 14px;
+  color: var(--Bills_Overview-muted);
+}
+.bigValue {
+  margin: 6px 0 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Bills_Overview-text);
+  line-height: 1;
+}
+.tinyMuted {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: var(--Bills_Overview-muted);
+}
+.destructive {
+  color: var(--Bills_Overview-danger);
+}
+.warning {
+  color: var(--Bills_Overview-warning);
+}
+
+/* categories */
+.pt4 {
+  padding-top: 16px;
+}
+.categoryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .categoryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoryCard {
+  background: var(--Bills_Overview-bg);
+  border: 1px solid var(--Bills_Overview-card-border);
+  border-radius: var(--Bills_Overview-radius);
+  box-shadow: var(--Bills_Overview-shadow-sm);
+  cursor: pointer;
+  transition: transform 190ms ease, box-shadow 190ms ease;
+}
+.categoryCard:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--Bills_Overview-shadow-lg);
+}
+.categoryBody {
+  padding: 22px;
+  box-sizing: border-box;
+  min-height: 200px;
+  display: flex;
+  align-items: stretch;
+}
+.colFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.iconCircleBlue,
+.iconCircleGreen,
+.iconCirclePurple {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.iconCircleBlue {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--Bills_Overview-primary);
+}
+.iconCircleGreen {
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+}
+.iconCirclePurple {
+  background: rgba(139, 92, 246, 0.08);
+  color: #8b5cf6;
+}
+.iconSmall {
+  width: 22px;
+  height: 22px;
+}
+
+.categoryTitle {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.categoryDesc {
+  margin: 0 0 12px 0;
+  color: var(--Bills_Overview-muted);
+  font-size: 14px;
+  flex: 1;
+}
+.mtAuto {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.categoryMeta {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* CTA */
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+  font-size: 14px;
+}
+.ctaButton:hover {
+  background: #eef3ff;
+}
+.ctaArrow {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+.ctaButton:hover .ctaArrow {
+  transform: translateX(6px);
+}
+
+/* responsive tweaks */
+@media (max-width: 520px) {
+  .bigValue {
+    font-size: 24px;
+  }
+  .cardBody {
+    padding: 16px;
+  }
+  .categoryBody {
+    padding: 16px;
+  }
+}

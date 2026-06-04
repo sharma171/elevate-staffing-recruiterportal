@@ -1,0 +1,270 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 12px;
+  max-width: 29rem;
+  width: 100%;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.iconCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.iconCircle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  margin: auto;
+}
+
+.google {
+  background: linear-gradient(to right, #fbbc05, #ea4335);
+}
+
+.outlook {
+  background: linear-gradient(to right, #0072c6, #5c9ded);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.permBox {
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.permHeader {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.permList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.permItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.permIcon {
+  font-size: 1.5rem;
+}
+
+.permTitle {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.permDesc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.appBox {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+}
+
+.appIcon {
+  background: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+}
+
+.appDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.appName {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.appDesc {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.checkboxLabel {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.checkboxInput {
+  margin-top: 0.3rem;
+}
+
+.btnPrimary {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.btnPrimary:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.btnSecondary {
+  width: 100%;
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secNotice {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #fef08a;
+  background-color: #fefce8;
+  border-radius: 0.5rem;
+}
+
+.secItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.secText {
+  font-size: 0.85rem;
+  color: #854d0e !important;
+}
+
+.secText strong {
+  color: #854d0e !important;
+}
+
+/* ------------------ Responsive Styles ------------------ */
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .permTitle {
+    font-size: 0.95rem;
+  }
+
+  .permDesc,
+  .subtext,
+  .secText {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .iconCircle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .subtext,
+  .permDesc,
+  .secText {
+    font-size: 0.8rem;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}

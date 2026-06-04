@@ -1,0 +1,248 @@
+.arrowLeft {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #f1f1f1;
+}
+
+.arrowLeft:hover {
+  background: #e1e1e1;
+}
+
+.mainboxCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.mainboxCard:hover {
+  border-color: #0d3791;
+}
+
+.optionTitleMain {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.optionText {
+  color: #64748b;
+  margin: 0;
+  margin-top: 3px;
+}
+
+.iconLarge {
+  border-radius: 10px;
+  padding: 12px;
+  background: #dbeafe;
+  width: max-content;
+  height: max-content;
+}
+
+.iconSmallInline {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.iconSmall {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.hiddenFile {
+  display: none;
+}
+
+.dashed,
+.dashedSmall {
+  border: 2px dashed #e6eef2;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dashedSmall {
+  padding: 25px 12px 20px;
+}
+
+.fileList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.fileRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #eef2f6;
+}
+
+.fileName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+
+.actionsRight {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.actionsRow {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+
+.infoBox {
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.18);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.infoTitle {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.button {
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buttonGhost {
+  background: transparent;
+  border: none;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.buttonOutline {
+  background: transparent;
+  border: 1px solid #e6e9ef;
+  color: #0f172a;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.buttonOutline:hover {
+  background: #e6e9ef;
+}
+
+.tableBox {
+  border: 1px solid #eef2f6;
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 340px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableRow {
+  cursor: pointer;
+}
+
+.tableRow:hover {
+  background: #f8fafc;
+}
+
+.smallMuted {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.centerMuted {
+  text-align: center;
+  padding: 18px;
+  color: #94a3b8;
+}
+
+.grid2 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #e6e9ef;
+  background: #fff;
+  overflow: hidden;
+}
+
+.cardContent {
+  padding: 12px;
+}
+
+.iconLarge {
+  border-radius: 10px;
+  padding: 12px;
+  background: #dbeafe;
+  width: max-content;
+  height: max-content;
+}

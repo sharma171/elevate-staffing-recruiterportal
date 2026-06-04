@@ -1,0 +1,56 @@
+/* DemoScheduler.module.css */
+.container {
+}
+
+.section {
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.datepicker {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.slotsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.slotDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selectedSlot,
+.slotDiv:hover {
+  background-color: #0b3d91;
+  color: white;
+  border-color: #0b3d91;
+}
+
+.clock {
+  margin-right: 6px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 13px;
+}

@@ -1,0 +1,285 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: #00000040;
+}
+
+.dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 50;
+  width: 100%;
+  max-width: 42rem;
+  max-height: 90vh;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  border-radius: 0.75rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #4c4c5a;
+}
+
+.body {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #4c4c5a;
+}
+
+.searchInput {
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 2.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+}
+
+.scrollArea {
+  height: 300px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.listItem {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  gap: 1rem;
+  transition: background 0.15s ease;
+}
+
+.listItem:hover {
+  background: #f3f4f6;
+}
+
+.itemContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.candidateName {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statusRow,
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem 1rem;
+}
+
+.label {
+  color: #4c4c5a;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.vendor {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.submittedBy {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.rate {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.statusBadge {
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background: #ececec;
+  font-weight: 500;
+}
+
+.checkIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #007c70;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.button {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 0.375rem;
+
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backBtn:hover,
+.cancelBtn:hover {
+  background: #f3f4f6;
+}
+
+.cancelBtn {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0.7;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+.schedule_successBox {
+  display: flex;
+  gap: 12px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.schedule_successIcon {
+  color: #16a34a;
+}
+
+.schedule_successTitle {
+  font-weight: 600;
+  color: #065f46;
+  font-size: 16px;
+}
+
+.schedule_successText {
+  font-size: 14px;
+  color: #047857;
+}
+
+.schedule_successSub {
+  font-size: 13px;
+  color: #16a34a;
+}
+
+.schedule_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.schedule_field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.schedule_field label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.schedule_field input,
+.schedule_field textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.schedule_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.schedule_full {
+  grid-column: span 2;
+}
+
+.schedule_footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.schedule_primary {
+  background: #7c3bed;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.schedule_primary:hover {
+  background: #7c3bedea;
+}

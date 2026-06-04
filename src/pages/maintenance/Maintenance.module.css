@@ -1,0 +1,299 @@
+/* Layout */
+.flexGrow {
+  flex-grow: 1;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-sizing: border-box;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 42rem;
+  background: #ffffff;
+  color: #152133;
+  border-radius: 10px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border: 2px solid #e2e8f0;
+  overflow: hidden;
+}
+
+/* Header */
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 32px;
+  text-align: center;
+  gap: 18px;
+}
+
+.centerRow {
+  display: flex;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+  max-width: 112px;
+  max-height: 112px;
+}
+
+.pulseBg {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(37, 99, 235, 0.12);
+  filter: blur(28px);
+  animation: pulse 2.8s infinite;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.95;
+  }
+}
+
+.iconWrap {
+  position: relative;
+  z-index: 2;
+  width: 112px;
+  height: 112px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #123d9a;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.settingsIcon {
+  width: 64px;
+  height: 64px;
+  color: #ffffff;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardTitle {
+  letter-spacing: -0.015em;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #0d3791, #0d379199);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 8px;
+}
+
+.cardDescription {
+  margin: 0;
+  font-size: 18px;
+  color: #14748b;
+}
+
+/* Content */
+.cardContent {
+  padding: 0px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mutedBox {
+  background: #f4f9ff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid rgba(21, 33, 51, 0.03);
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.iconBg {
+  background: rgba(18, 61, 154, 0.08);
+  border-radius: 9999px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+  border: 1px solid rgba(18, 61, 154, 0.06);
+}
+
+.smallIcon {
+  width: 20px;
+  height: 20px;
+  color: #123d9a;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020817;
+  margin-bottom: 4px;
+}
+
+.itemText {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.25;
+}
+
+/* Center area and buttons */
+.centerArea {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.expectedText {
+  margin: 0;
+  font-size: 15px;
+  color: #657386;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.primaryButton {
+  background: #123d9a;
+  color: #ffffff;
+  border: 1px solid rgba(18, 61, 154, 0.12);
+  box-shadow: 0 6px 12px rgba(18, 61, 154, 0.12);
+}
+
+.primaryButton:hover {
+  background: #0f3586;
+  text-decoration: none;
+  color: white;
+}
+
+.secondaryButton {
+  background: #ffffff;
+  color: #172033;
+  border: 1px solid rgba(21, 33, 51, 0.08);
+}
+
+.secondaryButton:hover {
+  background: #f7f9fb;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  padding-top: 00px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footerText {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #6d7886;
+  padding-top: 18px;
+}
+
+.footerLink {
+  color: #123d9a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .card {
+    margin: 5px;
+  }
+
+  .page {
+    padding: 10px 5px;
+  }
+
+  .cardHeader {
+    padding: 20px 20px 30px;
+  }
+  .cardContent {
+    padding: 0px 15px 20px;
+  }
+  .iconWrap {
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+  }
+  .settingsIcon {
+    width: 56px;
+    height: 56px;
+  }
+  .cardTitle {
+    font-size: 28px;
+  }
+  .mutedBox {
+    padding: 16px;
+  }
+}

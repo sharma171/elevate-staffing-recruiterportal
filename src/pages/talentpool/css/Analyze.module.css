@@ -1,0 +1,54 @@
+.thead,
+.thead * {
+  color: var(--black_description);
+}
+
+.tbody tr:nth-child(odd) {
+  background-color: #f8f9fa !important; /* Light gray for odd rows */
+}
+
+.tbody tr:nth-child(even) {
+  background-color: #fff !important;
+}
+
+.table {
+  background: #fff;
+  border-radius: 20px;
+  /* padding: 15px 0 0 0; */
+}
+
+.analyzebutton {
+  background: rgba(9, 60, 133, 0.04);
+  color: var(--blue2);
+  padding: 7px 25px;
+  border-radius: 1000px;
+  font-weight: 500;
+  width: max-content;
+  margin: auto;
+  cursor: pointer;
+}
+
+.dateStyle {
+  color: var(--blue2);
+}
+.dot-boll {
+  background: var(--blue2);
+  margin-bottom: 1px;
+}
+
+.analyzebuttoninterview {
+  background: #f0feed;
+  color: #007c0f;
+  padding: 7px 25px;
+  border-radius: 1000px;
+  font-weight: 500;
+  width: max-content;
+  margin: auto;
+  cursor: pointer;
+}
+
+.dotinterview {
+  background: #007c0f;
+  margin-bottom: 1px;
+  border-radius: 1000px;
+}

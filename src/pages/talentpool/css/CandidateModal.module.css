@@ -1,0 +1,271 @@
+.phoneInput {
+  width: 100%;
+}
+
+.miniDropdownContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.miniDropdownContainer > div {
+  flex: 1;
+}
+
+.tabContainer {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 10px;
+  margin: 20px 0;
+  font-weight: 500;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.tabContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.activetab,
+.navtab:hover,
+.activetab:hover {
+  background: var(--themeBTNBG);
+  color: var(--white);
+}
+.activetab .buttonText,
+.navtab:hover .buttonText,
+.activetab:hover .buttonText {
+  color: var(--white);
+}
+
+.navtab {
+  color: var(--themeBTNBG);
+  border: 1px solid var(--tabborder);
+}
+
+.tabBTN {
+  border-radius: 20px !important;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.tabBTN span {
+  height: 20px;
+  width: 20px;
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.tabcontentcontainerMain {
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.tabcontentcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.edituserButtons {
+  background: var(--userbtnBG);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.edituserButtons:hover {
+  background: #cbcbcb;
+}
+
+.edituserButtons span {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  margin-top: 2px;
+}
+
+.userImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.userbgcontainer {
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 15px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: auto;
+  width: 100%;
+}
+
+.tabContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.tabinfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 15px 0;
+  color: var(--themeBTNBG);
+}
+
+.formlabel {
+  font-size: 14px;
+  color: var(--formlabel);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+  resize: auto;
+  outline: none;
+  height: auto;
+}
+
+.tabBTN:hover .tabIcon,
+.activetab .tabIcon {
+  filter: brightness(100) !important;
+}
+.buttonText {
+  color: rgb(34 76 155);
+}
+.tabinfo.tabinfoActive {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.canFormTab .canTabBtn .canBtnText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.001em;
+  color: #454545 !important;
+}
+.canFormTab .canTabBtn.activeCanBtn p.canBtnText {
+  color: #0b4da1 !important;
+}
+.canFormTab .canTabBtn.activeCanBtn {
+  border-bottom: 2px solid #073276;
+  margin-bottom: -1px;
+}
+.canFormTab .canTabBtn {
+  width: 100%;
+  background: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 9px 12px 14px 12px;
+  line-height: 150%;
+  letter-spacing: 0.001em;
+  color: #454545 !important;
+  border: none;
+  text-align: center;
+}
+
+.canFormTab {
+  display: flex;
+  min-width: 100%;
+  border-bottom: 2px solid #afc8e3;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .buttonText {
+    color: rgb(34 76 155);
+    display: none;
+  }
+  .profileName {
+    margin-top: 6px;
+  }
+  .tabBTN {
+    border-radius: 20px !important;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #f5f7fb;
+  }
+  .tabBTN span {
+    color: rgb(34 76 155);
+  }
+  .userbgcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px !important;
+  }
+  .activetab,
+  .navtab:hover,
+  .activetab:hover {
+    background: var(--themeBTNBG);
+    color: var(--white);
+    width: unset;
+    span {
+      color: rgb(255, 255, 255);
+    }
+  }
+  .activetab,
+  .navtab:hover,
+  .activetab:hover {
+    background: var(--themeBTNBG);
+    color: var(--white);
+    width: unset;
+    .buttonText {
+      color: rgb(255, 255, 255);
+      display: block;
+    }
+  }
+  .buttonRows {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    max-width: 100%;
+    width: 100%;
+    scrollbar-width: none;
+  }
+}
+
+.horizontalScroll {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.horizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .canFormTab {
+    min-width: unset !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabcontentcontainerMain {
+    padding: 10px;
+  }
+}

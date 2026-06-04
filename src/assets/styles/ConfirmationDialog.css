@@ -1,0 +1,44 @@
+.dialog-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.dialog-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    z-index: 10;
+    width: 500px;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.dialog-question{
+    color: var(--clr-main);
+    font-weight: 500;
+
+}
+.dialog-cancel, .dialog-continue{
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-white);
+    font-weight: 500;
+    padding: 10px;
+    font-size: 13px;
+}
+.dialog-continue{
+    background-color: var(--clr-warning);
+    width: 75px;
+}
+.dialog-cancel{
+    background-color: transparent;
+    color: var(--clr-main);
+    border: solid 1px var(--clr-main);
+}
+

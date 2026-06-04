@@ -1,0 +1,226 @@
+.header {
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.subtitle {
+  color: #6b7280;
+}
+
+.cardPrimary {
+  background: rgba(14, 165, 164, 0.05);
+  border: 1px solid rgba(14, 165, 164, 0.2);
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+}
+.card {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e6eef0;
+}
+.cardMuted {
+  background: rgba(99, 102, 241, 0.04);
+  border-radius: 0.5rem;
+}
+.cardContent {
+  padding: 1rem;
+}
+.cardContentLarge {
+  padding: 1.25rem;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+.smallMuted {
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+.bold {
+  font-weight: 600;
+}
+.large {
+  font-size: 1.125rem;
+}
+.small {
+  font-size: 0.75rem;
+}
+
+.badge {
+  background: rgba(250, 204, 21, 0.12);
+  color: #92400e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.aster {
+  color: #dc2626;
+  margin-left: 0.25rem;
+}
+
+.radioGroup {
+  display: block;
+}
+.radioRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.radioLabel {
+  cursor: pointer;
+}
+
+.indent {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.btnOutline {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btnPrimary {
+  background: #0ea5a4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+.mutedText {
+  color: #6b7280;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.popover {
+  position: absolute;
+  z-index: 40;
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid #e6eef0;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+.dateInput {
+  border: 1px solid #e2e8f0;
+  padding: 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.tipBox {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  color: #6b7280;
+}
+.tipIcon {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background: white;
+}
+.balance {
+  color: #166534;
+  font-weight: 600;
+}
+
+.checkboxCol {
+  display: block;
+}
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.checkboxLabel {
+  cursor: pointer;
+}
+
+.recurringGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+.summaryFooter {
+  border-top: 1px solid #e6eef0;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.successText {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .recurringGrid {
+    grid-template-columns: 1fr;
+  }
+}

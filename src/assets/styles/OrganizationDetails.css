@@ -1,0 +1,134 @@
+.org-details-main{
+    overflow-x: none;
+    background-color: var(--clr-secondary);
+}
+.org-details-container{
+    position: absolute;
+    width: 95.4%;
+    z-index: 1; 
+    left: 4.6%;
+    overflow-x: none;
+    padding: 12px 0px 0px ;
+    top: 6%;
+    height: 92vh;
+    background-color: var(--clr-secondary);
+}
+.org{
+    width: 100%;
+}
+
+.org-top-element{
+    list-style-type: none;
+    margin-left: 5px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.org-element{
+    padding: 10px 15px 10px 15px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--clr-main);
+    opacity: 0.5;
+}
+
+.org-element-active{
+    color: var(--clr-main);
+    background-color: var(--clr-white);
+    opacity: 4;
+}
+.org-body{
+    background-color: var(--clr-secondary);
+    height: 85vh;
+    /* padding: 10px; */
+    overflow-x: auto;
+
+}
+
+.v2-btn-container{
+    padding: 10px;
+    background-color: white;
+}
+
+
+.org-btn-container{
+    margin-bottom: 7px !important;
+}
+.org-btn-container input{
+    padding: 10px;
+    width:100%;
+    /* border: solid 1px var(--clr-grey); */
+    /* margin-top: 10px; */
+}
+
+.org-btn-container input:focus{
+    outline: none;
+}
+
+.v2-btn-loader{
+    width: 100px;
+}
+.org-manager-dropDown{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px var(--clr-grey);
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.org-mini-dropDown{
+    width: 48%;
+}
+.org-mini-dropDown select{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px var(--clr-grey);
+    border-radius: 5px;
+    margin-top: 4px;
+}
+.teams-input{
+    width: 200px;
+}
+.teams-input input{
+    padding: 4px 0px 4px 5px;
+    width: 100%;
+    border: solid 0.5px var(--clr-grey);
+}
+
+.teams-input input:focus{
+    outline: none;
+}
+.teams-dropDown-container{
+    width: fit-content;
+}
+
+.clear-filters button{
+    border: solid 0.5px var(--clr-grey);
+    padding: 4px;
+    background-color: transparent;
+    color: var(--clr-teritary);
+    border-radius: 5px;    
+}
+
+.clear-filters button:hover{
+    color: var(--clr-warning);
+}
+
+.loader-container{
+    height: 500px;
+}
+.table-status{
+    font-weight: 700;
+}
+.table-status-warning{
+    color: var(--clr-warning);
+}
+.table-status-success{
+    color: green;
+}
+.v2-page-btn{
+    background: transparent;
+    border: solid 0.5px var(--clr-main);
+    border-radius: 5px;
+    padding: 5px 7px 2px 7px;
+    cursor: pointer;
+}

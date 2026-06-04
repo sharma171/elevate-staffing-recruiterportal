@@ -1,0 +1,122 @@
+:root {
+  --select-icon-before: " ";
+  --darkGray: #454545;
+  --lightGray: #6b7280;
+  --white: #ffffff;
+  --themeBTNBG: #0b4da1;
+  --blue2: #0b4da1;
+  --blue: #073276;
+  --themeBTNBGDARK: #073276;
+  --themeBG: #f4f7fc;
+  --gradientGray0: rgba(224, 225, 226, 0);
+  --gradientGray1: rgba(224, 225, 226, 1);
+  --gradientGray2: rgba(224, 225, 226, 0.1563);
+  --sepLine: #9aafcb;
+  --lightColor: #8c8c8c;
+  --themefontcolor: #1e293b;
+  --active: #259800;
+  --activeBG: #f0feed;
+  --inactive: #a61010;
+  --inactiveBG: #feeded;
+  --lightThemecolor: #afc8e3;
+  --vrsep: #d9d9d9;
+  --placeholder: #8d8e8e;
+  --tabborder: #cbd5e6;
+  --userbtnBG: #ebecef;
+  --lightfont: #718096;
+  --formlabel: #a8a8a8;
+  --gray_description: #676767;
+  --black_description: #454545;
+}
+
+.themePurple {
+  color: #7c3bed;
+}
+
+.themePurpleBG {
+  background-color: #7c3bed;
+}
+
+.themePurpleBGHover {
+  background-color: #7c3bed;
+}
+
+.themePurpleBGHover:hover {
+  background-color: #7c3bedea;
+}
+
+.successoutlineButtonWhite,
+.successoutlineButton {
+  background: transparent;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.successoutlineButtonWhite {
+  background: #fff;
+}
+
+.successoutlineButton:hover {
+  background-color: #3c83f6;
+  color: #fff;
+}
+
+.linkColorButton * {
+  color: #3c83f6 !important;
+}
+
+.linkColorButton {
+  color: #3c83f6 !important;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkColorButton:hover {
+  background-color: #f3f4f6;
+}
+
+.successButton {
+  background-color: #16a34a;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.successButton:hover {
+  background-color: #0d8639;
+}
+
+.purpleBadgeBtn {
+  background-color: transparent;
+  color: #7c3bed;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.purpleBadgeBtn:hover {
+  background-color: #7c3bed1a;
+}
+
+.notallowed,
+.notallowed * {
+  color: #67677e !important;
+  cursor: not-allowed;
+}

@@ -1,0 +1,112 @@
+/* Ensure container is always present */
+.overlay-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 11;
+  pointer-events: none; /* Prevents accidental clicks when hidden */
+}
+
+/* Background Overlay */
+.overlay-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 999999999999999;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Sliding Panel */
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  max-width: 70%;
+  transform: translateX(100%); /* Initially hidden */
+  transition: transform 0.2s ease-in;
+  z-index: 999;
+  scrollbar-width: none;
+}
+
+.pannelinner {
+  background: var(--themeBG);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 20px;
+  overflow-x: auto;
+  padding-left: 55px;
+}
+
+.panel::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, Edge */
+}
+
+/* Apply transform when open */
+.panel.open {
+  transform: translateX(0);
+}
+
+/* Show overlay container when active */
+.overlay-container.visible {
+  pointer-events: auto;
+}
+
+.modalclosebtn {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: var(--white);
+  margin-left: -38px;
+  border-radius: 100px;
+  z-index: 999;
+  top: 45%;
+  box-shadow: 0 4px 6px #00000020 !important;
+  opacity: 1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalclosebtn span {
+  height: 35px;
+  width: 35px;
+  display: block;
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+  .modalclosebtn {
+    height: 40px;
+    width: 40px;
+    margin-left: -23px;
+  }
+  .pannelinner {
+    padding: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pannelinner {
+    padding: 15px;
+    padding-left: 15px;
+  }
+}

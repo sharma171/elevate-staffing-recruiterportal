@@ -1,0 +1,36 @@
+runtime: nodejs22
+service: elevate-staffing
+
+env_variables:
+  NODE_ENV: production
+
+handlers:
+  # These should not be aggressively cached, so users always get
+  # the latest version after each deployment.
+  - url: /static
+    static_dir: build/static
+    secure: always
+    http_headers:
+      Cache-Control: "no-cache, max-age=0, must-revalidate"
+
+  # 2. Public assets (favicon, manifest, images, etc.)
+  - url: /(.*\.(json|ico|png|jpg|svg|xml|txt|webp|gif))$
+    static_files: build/\1
+    upload: build/.*\.(json|ico|png|jpg|svg|xml|txt|webp|gif)$
+    secure: always
+    http_headers:
+      Cache-Control: "public, max-age=86400"
+
+  # 3. SPA: Always serve index.html
+  # This must NEVER be cached, otherwise the old UI remains loaded.
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
+    secure: always
+    http_headers:
+      Cache-Control: "no-cache, no-store, must-revalidate"
+      Expires: "0"
+      Pragma: "no-cache"
+
+manual_scaling:
+  instances: 2

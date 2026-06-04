@@ -1,0 +1,12 @@
+/* Mobile Responsive CSS */
+/* responsive.css */
+@media only screen and (max-width: 767px) { 
+    .main-dash .dashnav.active {
+        position: absolute; 
+    }
+    
+}
+@media (min-width: 992px) { 
+    /* Styles for desktops and larger screens   
+ */ 
+}

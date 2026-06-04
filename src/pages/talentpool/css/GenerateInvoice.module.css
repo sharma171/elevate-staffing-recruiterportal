@@ -1,0 +1,622 @@
+.addButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background: #3832af;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.icon {
+  color: #4a4a4a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  background: #eff6ff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 1px solid #bfdbfe;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.input,
+.textarea {
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid #5b9bff !important;
+  outline: none;
+}
+
+.amountBox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 38px;
+}
+
+.iconMuted {
+  color: #999;
+}
+
+.emailList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  gap: 4px;
+}
+
+.removeIcon {
+  cursor: pointer;
+}
+
+.emailInputRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.emailInputRow input {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.actions button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelbtn {
+  background: white !important;
+  color: #2563eb !important;
+  border: 1px solid #2563eb !important;
+}
+
+.cancelbtn:hover {
+  color: white !important;
+  background: #2563eb !important;
+  border: 1px solid #2563eb !important;
+}
+
+.actions button:not([disabled]) {
+  background-color: #2563eb;
+  color: white;
+}
+
+.actions button:not([disabled]):hover {
+  background-color: #0048e6;
+}
+
+.actions button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+/* preview invoice */
+.preview_dialog {
+}
+
+.preview_header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.preview_title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file_icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #4b5563;
+}
+
+.preview_subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.preview_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.preview_header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section_title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.success_badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid #059669;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #059669;
+}
+
+.info_card {
+  padding: 1rem;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+  background-color: #f0fdf4;
+}
+
+.grid_2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.info_label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #065f46;
+}
+
+.info_value {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.info_value_lg {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #1f2937;
+}
+
+.pdf_preview_card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.pdf_header {
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+
+.pdf_label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.pdf_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.pdf_button:hover {
+  background-color: #f9fafb;
+}
+
+.pdf_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.recipient_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section_label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.email_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.email_badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #e5e7eb;
+}
+
+.status_badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.action_footer {
+  display: flex;
+  margin-top: 1rem;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.secondary_button:hover {
+  background-color: #f0f0f0;
+}
+
+.primary_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  background-color: var(--blue2);
+  color: white;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.primary_button:hover {
+  background-color: var(--blue);
+}
+
+.download_icon,
+.check_icon,
+.mail_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Mark as Sent Modal Styles */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 40;
+  animation: fadeInBackdrop 0.2s ease-out;
+}
+
+@keyframes fadeInBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mark_sent_dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mark_sent_header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.mark_sent_title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.75rem;
+}
+
+.mark_sent_description {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.mark_sent_content {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mark_sent_field_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mark_sent_label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.mark_sent_input {
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+}
+
+.mark_sent_input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.mark_sent_textarea {
+  min-height: 5rem;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  resize: vertical;
+}
+
+.mark_sent_textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.mark_sent_hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.mark_sent_footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.mark_sent_cancel {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mark_sent_cancel:hover {
+  background-color: #f9fafb;
+}
+
+.mark_sent_confirm {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 0.375rem;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mark_sent_confirm:hover {
+  background-color: #2563eb;
+}
+
+.mark_sent_close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0.7;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.mark_sent_close:hover {
+  opacity: 1;
+  background-color: #f3f4f6;
+}
+
+.close_icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.error {
+  border-color: #ef4444;
+}
+
+.error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+.error_message {
+  font-size: 0.75rem;
+  color: #ef4444;
+}
+
+.addemailbtn {
+  padding: 5px !important;
+  border-radius: 5px;
+  background-color: #f2f2f2 !important;
+}
+
+.addemailbtn:hover {
+  padding: 5px !important;
+  border-radius: 5px;
+  background-color: #d2d2d2 !important;
+}

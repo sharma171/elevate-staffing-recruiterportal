@@ -1,0 +1,762 @@
+.main-dash .content .bench-cards.cand-cards {
+  width: 320px;
+}
+
+.headerboxglass .tabButton:first-child img {
+  height: 16px !important;
+}
+.headerboxglass .tabButton img {
+  width: 16px;
+  height: auto;
+  margin-top: 1px;
+}
+.headerboxglass .tabButton {
+  color: #0b4da1;
+  border: 1px solid #0b4da1;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.headerboxglass .tabButton:hover img {
+  width: 16px;
+  height: auto;
+  filter: brightness(13);
+}
+
+.headerboxglass .tabButton:hover {
+  color: #ffffff;
+  border: 1px solid #0b4da1;
+  background: #0b4da1;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.headerboxglass .tabButton.active img {
+  width: 16px;
+  height: auto;
+  filter: brightness(13);
+}
+.headerboxglass .tabButton.active {
+  color: #ffffff;
+  border: 1px solid #0b4da1;
+  background: #0b4da1;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Ehub-table {
+  padding-top: 4px !important;
+}
+.Ehub-table .table thead tr th {
+  padding: 10px 14px;
+}
+.Ehub-table .table tbody tr:hover {
+  background: #e3efff;
+}
+.Ehub-table .table tbody tr:nth-child(2n-1) td {
+  background: #f8f9fa;
+}
+.Ehub-table .table tbody tr td .alignCenter span.OPT {
+  color: #007c0f;
+}
+.Ehub-table .table tbody tr td .alignCenter span.STEM.OPT {
+  color: #9a00c1;
+}
+.Ehub-table .table tbody tr td .alignCenter span.H1B {
+  color: #0c0e8b;
+}
+.Ehub-table .table tbody tr td .alignCenter span.High {
+  color: #f44336;
+}
+.Ehub-table .table tbody tr td .alignCenter span.Medium {
+  color: #f8a80d;
+}
+.Ehub-table .table tbody tr td .alignCenter span.Low {
+  color: #3ad800;
+}
+.Ehub-table .table tbody tr td .alignCenter span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #073276;
+}
+.Ehub-table .table tbody tr td .alignCenter.skills span {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #6b7280;
+}
+.Ehub-table .table tbody tr td .alignCenter.priority svg {
+  width: 30px;
+  margin-top: 0;
+}
+.Ehub-table .table tbody tr td .alignCenter.visa svg {
+  margin-top: 0;
+  width: 30px;
+  height: auto;
+}
+.Ehub-table .table tbody tr td .alignCenter.skills svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+}
+.Ehub-table .table tbody tr td .alignCenter svg {
+  width: 45px;
+  height: 44px;
+  margin-top: 6px;
+}
+.Ehub-table .table tbody tr td {
+  color: #6b7280;
+}
+.Ehub-table .table tbody tr td .alignCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.Ehub-table .table tbody tr td {
+  padding: 12px 15px;
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  margin: 23px auto;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.pagination-btn,
+.pagination-nav {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn.active {
+  background-color: #1f4b99;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination-nav {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.pagination-nav:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+  padding: 6px 12px;
+  font-weight: bold;
+  color: #555;
+}
+
+.emailscheduleTab {
+  height: calc(100vh - 42vh);
+  background: #f7fcff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailscheduleTab .inputtime .checkbox-group .checkbox-label {
+  padding: 10px 13px;
+  background: linear-gradient(45deg, rgba(199, 226, 235, 0.183), #d5f4ff);
+  border-radius: 10px;
+  margin-bottom: 0;
+  display: none;
+}
+.emailscheduleTab .inputtime .checkbox-group .checkbox-label.selected {
+  padding: 10px 13px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #083797;
+  color: #083797;
+  margin-bottom: 0;
+  cursor: pointer;
+  display: flex;
+}
+.emailscheduleTab .inputtime .checkbox {
+  display: none;
+}
+.emailscheduleTab .inputtime {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  max-width: 360px;
+  border-radius: 20px;
+  position: relative;
+}
+.emailscheduleTab .timeDayScheduler.day {
+  .checkbox-dropdown {
+    width: 100%;
+    position: relative;
+  }
+
+  .dropdown-header .name {
+    justify-content: space-between;
+    color: #003bc2;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 1.5em;
+  }
+  .dropdown-header {
+    border: 1px solid #003bc2;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  .dropdown-list input {
+    margin-right: 5px;
+  }
+  .dropdown-list {
+    border: none;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 0px;
+    background: transparent;
+    scrollbar-width: none;
+    max-height: 200px;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .dropdown-item {
+    display: flex;
+    padding: 6px 10px;
+    cursor: pointer;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+
+  .dropdown-item:hover {
+    background: transparent;
+  }
+
+  .arrow {
+    font-size: 12px;
+    border-top: none;
+  }
+}
+.emailscheduleTab .timeDayScheduler.day .daylist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.emailscheduleTab .timeDayScheduler.day .inputtime {
+  max-width: 100%;
+}
+.emailscheduleTab .timeDayScheduler.day {
+  margin-left: 20px;
+  max-width: unset;
+}
+.emailscheduleTab .timeDayScheduler {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.emailscheduleTab .inputtime label {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  color: #083797;
+}
+.emailscheduleTab .inputtime {
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+}
+.emailscheduleTab .inputtime input {
+  padding: 19px 16px;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(45deg, lightblue, #5ab0cc);
+  border: none;
+}
+/* Beautifying the dropdown */
+input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/* Styling Hour and Minute Fields */
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field {
+  background: #0b4da1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Highlight selected time */
+input[type="time"]::-webkit-datetime-edit-hour-field:focus,
+input[type="time"]::-webkit-datetime-edit-minute-field:focus {
+  background: #083a79;
+  color: #fff;
+}
+
+/* Beautifying dropdown list */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background-color: #0b4da1;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 0.3s ease;
+}
+.vendorButtons .button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.emailscheduleTab .button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: auto;
+}
+.emailscheduleTab .button-group .schedulebtn.delete svg {
+  width: 22px;
+  height: 22px;
+}
+.emailscheduleTab .button-group .schedulebtn.delete {
+  background: rgb(221, 0, 0);
+}
+.emailscheduleTab .button-group .schedulebtn.delete:hover {
+  background: rgb(221, 0, 0);
+}
+.vendorButtons .button-group .schedulebtn.Download svg {
+  transform: rotate(180deg);
+}
+
+.emailscheduleTab .button-group .sendemailbtn svg,
+.vendorButtons .button-group .sendemailbtn svg {
+  width: 24px;
+  height: 24px;
+}
+.emailscheduleTab .button-group .sendemailbtn,
+.vendorButtons .button-group .sendemailbtn {
+  box-sizing: border-box;
+  padding: 12px 21px;
+  gap: 10px;
+  border: 1px solid #0b4da1;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  color: #0b4da1;
+  border-radius: 20px;
+  background: transparent;
+}
+.emailscheduleTab .button-group .schedulebtn,
+.vendorButtons .button-group .schedulebtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 21px;
+  gap: 10px;
+  color: #fff;
+  border: none;
+  background: #0b4da1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.emailscheduleTab .button-group .sendemailbtn:hover svg,
+.vendorButtons .button-group .sendemailbtn:hover svg {
+  /* filter: brightness(13); */
+}
+.emailscheduleTab .button-group .sendemailbtn:hover,
+.vendorButtons .button-group .sendemailbtn:hover svg {
+  /* background: #0B4DA1;
+    color: white; */
+  transform: scale(1.05);
+  /* box-shadow: 0px 4px 8px rgba(11, 77, 161, 0.3); */
+}
+.emailscheduleTab .button-group .schedulebtn:hover,
+.vendorButtons .button-group .schedulebtn:hover {
+  background: #083a79;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(11, 77, 161, 0.4);
+}
+
+.activityDash {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.activityDash .cards .cardRow .bigWrap {
+  align-items: end;
+}
+.activityDash .card1 .cardRow .smallText {
+  color: #1e88e5;
+  font-size: 16px;
+  font-weight: 600;
+}
+.activityDash .card1 .cardRow .bigText {
+  color: #1e88e5;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.activityDash .card1 .cardRow .normalText {
+  color: #1e88e5;
+  font-size: 18px;
+  font-weight: 600;
+}
+.activityDash .card2 .cardRow .smallText {
+  color: #ffb62c;
+  font-size: 16px;
+  font-weight: 600;
+}
+.activityDash .card2 .cardRow .bigText {
+  color: #ffb62c;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  background: linear-gradient(112.83deg, #ffb62c 0%, #f5815a 110.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.activityDash .card2 .cardRow .normalText {
+  color: #ffb62c;
+  font-size: 18px;
+  font-weight: 600;
+}
+.activityDash .card3 .cardRow .smallText {
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(112.83deg, #eb4887 0%, #af619a 110.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.activityDash .card3 .cardRow .bigText {
+  color: #ffb62c;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  background: linear-gradient(112.83deg, #eb4887 0%, #af619a 110.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.activityDash .card3 .cardRow .normalText {
+  color: #ffb62c;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(112.83deg, #eb4887 0%, #af619a 110.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.activityDash .card1 {
+  box-sizing: border-box;
+  background: #f9f9fe;
+  box-shadow:
+    0px 4.15859px 27.7239px rgba(9, 30, 66, 0.1),
+    0px 0px 2.77239px rgba(9, 30, 66, 0.31);
+  border-radius: 31.5859px;
+}
+.activityDash .card2 {
+  background: #fcfcf5;
+  box-sizing: border-box;
+  box-shadow:
+    0px 4.15859px 27.7239px rgba(9, 30, 66, 0.16),
+    0px 0px 2.77239px rgba(66, 53, 9, 0.31);
+  border-radius: 41.5859px;
+}
+.activityDash .card3 {
+  background: #fbf6fd;
+  box-shadow:
+    0px 4.15859px 27.7239px rgba(9, 30, 66, 0.16),
+    0px 0px 2.77239px rgba(66, 53, 9, 0.31);
+  border-radius: 41.5859px;
+}
+.activityDash .cards {
+  width: calc(33% - 25px);
+}
+.activityDash .cards .cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 28px;
+}
+.activityDash .cards .cardRow .left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.activityDash .cards .cardRow .right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.activityDash .cards .cardRow .right-col svg {
+  width: 70px;
+}
+.popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.topHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.close {
+  font-size: 28px;
+  line-height: 23px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  font-weight: 500;
+  color: #0f2250;
+}
+
+.File-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-file-upload svg {
+  width: 30px;
+  height: 43px;
+}
+.custom-file-upload {
+  background: #007bff00;
+  color: #003bc2;
+  padding: 16px 20px;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  border: 2px dashed #003bc282;
+}
+
+.custom-file-upload:hover {
+  background: #0057b324;
+}
+
+.upload-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.upload-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.uploadMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .activityDash {
+    flex-direction: column;
+    gap: 21px;
+  }
+  .activityDash .cards {
+    width: 100%;
+  }
+  .emailscheduleTab .button-group .sendemailbtn,
+  .vendorButtons .button-group .sendemailbtn {
+    font-size: 12px !important;
+    align-items: center;
+    padding: 8px 13px !important;
+  }
+  .emailscheduleTab .button-group .schedulebtn svg,
+  .vendorButtons .button-group .schedulebtn svg {
+    width: 16px;
+  }
+  .emailscheduleTab .button-group .schedulebtn,
+  .vendorButtons .button-group .schedulebtn {
+    font-size: 12px !important;
+    align-items: center;
+    padding: 8px 13px !important;
+  }
+  .emailscheduleTab .button-group .sendemailbtn svg,
+  .vendorButtons .button-group .sendemailbtn svg {
+    width: 16px;
+    height: 16px;
+  }
+  .emailscheduleTab .button-group .schedulebtn:hover .mobileHidden,
+  .vendorButtons .button-group .schedulebtn:hover .mobileHidden {
+    display: unset;
+  }
+  .vendorButtons .button-group .mobileHidden {
+    display: none;
+  }
+  .vendorButtons .button-group {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .emailscheduleTab .emailInputs {
+    flex-direction: column;
+  }
+  .emailscheduleTab .timeDayScheduler.day {
+    margin-left: 0;
+  }
+  .emailscheduleTab .inputtime {
+    height: 100px;
+  }
+  .emailscheduleTab .custom-time-picker {
+    border: 1px solid #0b4da1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #f8fcff !important;
+    z-index: 1;
+  }
+  .emailscheduleTab .timeDayScheduler.day {
+    .checkbox-dropdown {
+      width: 100%;
+      position: relative;
+
+      background: #f8fcff;
+    }
+  }
+  .emailscheduleTab .button-group {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pagination-container {
+    gap: 0px;
+    padding: 3px;
+    margin: 23px auto;
+    border-radius: 8px;
+    width: fit-content;
+  }
+  .pagination-btn,
+  .pagination-nav {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 9px 11px;
+  }
+}

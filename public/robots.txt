@@ -1,0 +1,8 @@
+# robots.txt for https://elevatestaffing.ai
+
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://elevatestaffing.ai/sitemap.xml

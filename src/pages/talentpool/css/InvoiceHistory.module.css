@@ -1,0 +1,386 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: #444;
+}
+
+.cardContent {
+  overflow-x: auto;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.table th {
+  background-color: #f8f8f8;
+  font-weight: 500;
+}
+
+.badgePrimary {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: #e0f2ff;
+  color: #0070f3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.iconButton:hover {
+  color: #000;
+}
+.filterCard {
+  background: #ffffff;
+  border: 1px solid #e6eef8;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+/* Desktop grid */
+.filterGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+/* Search */
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  color: #94a3b8;
+  pointer-events: none;
+}
+.searchInput {
+  width: 100%;
+  padding: 8px 10px 8px 40px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+}
+
+/* Labels & selects */
+.label {
+  display: block;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+.select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+}
+
+/* Footer */
+.muted {
+  color: #64748b;
+  font-size: 13px;
+}
+.filterFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.clearBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0f172a;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+/* Table wrapper adjustments so filter layout doesn't overflow */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+/* Responsive breakpoints */
+
+/* Large tablets / small desktops: 3 columns */
+@media (max-width: 1024px) {
+  .filterGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Tablets / landscape phones: 2 columns */
+@media (max-width: 768px) {
+  .filterCard {
+    padding: 14px;
+  }
+
+  .filterGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .searchIcon {
+    left: 8px;
+    top: 9px;
+  }
+  .searchInput {
+    padding: 7px 10px 7px 30px;
+    font-size: 14px;
+  }
+
+  .muted {
+    font-size: 12px;
+  }
+
+  .clearBtn {
+    padding: 6px 10px;
+  }
+
+  /* Footer stacked on narrow tablet */
+  .filterFooter {
+    gap: 8px;
+  }
+}
+
+/* Phones: single column stack */
+@media (max-width: 420px) {
+  .filterCard {
+    padding: 12px;
+    margin-bottom: 14px;
+  }
+
+  .filterGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .searchIcon {
+    left: 8px;
+    top: 10px;
+  }
+
+  .searchInput {
+    padding: 8px 10px 8px 34px;
+    font-size: 14px;
+  }
+
+  .select {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .filterFooter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .filterFooter > div:first-child {
+    order: 2;
+  }
+
+  .filterFooter > div:last-child {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Make Clear button full width on very small screens for easier tapping */
+  .clearBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    background: #f8fafc;
+    border: 1px solid #e6eef8;
+  }
+}
+
+/* Accessibility / focus states */
+.searchInput:focus,
+.select:focus,
+.clearBtn:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Ensure icons don't overflow */
+.iconButton,
+.searchIcon,
+.receiptIcon {
+  box-sizing: content-box;
+}
+
+/* Small polish for medium screens */
+@media (min-width: 421px) and (max-width: 767px) {
+  .filterFooter > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.moreButton {
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #e7e7ef; */
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.moreButton:hover {
+  background-color: #3c83f6;
+  color: #fff;
+  border-color: #7c3bed;
+}
+
+li:last-child .dropdownMenu{
+  top: unset;
+  bottom: calc(100% + 4px);
+} 
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  min-width: 180px;
+  background: white;
+  border: 1px solid #e7e7ef;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 4px;
+  animation: slideIn 0.15s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menuItem {
+  width: 100%;
+  text-align: left;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #080118;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.menuItem:hover {
+  background-color: #3c83f6;
+  color: #fff;
+}
+
+.menuItem svg {
+  flex-shrink: 0;
+}
+
+.menuSeparator {
+  height: 1px;
+  background-color: #e7e7ef;
+  margin: 4px 0;
+}
+
+.destructive {
+  color: #dc2626 !important;
+}
+
+.destructive:hover {
+  background-color: #fee2e2 !important;
+  color: #dc2626 !important;
+}
+.lastRowMenu {
+      top: unset !important;
+    bottom: 100% !important;
+}

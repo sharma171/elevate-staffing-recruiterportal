@@ -1,0 +1,16 @@
+.disabled {
+  color: #d8d8d8;
+}
+
+.activePage,
+.pages:hover {
+  background: var(--themeBTNBG) !important;
+  color: var(--lightThemecolor) !important;
+}
+
+.pages {
+  color: var(--themeBTNBGDARK);
+  width: max-content;
+  min-width: 35px;
+  height: 35px;
+}
